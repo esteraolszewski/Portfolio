@@ -1,1 +1,15 @@
 @use './variables';
+
+.skills {
+
+    background-color: variables.$bodyBackgroundTwo;
+    text-align: center;
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+
+    
+    }
+}

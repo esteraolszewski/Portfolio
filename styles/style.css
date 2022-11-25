@@ -271,6 +271,10 @@ h2 {
   font-size: 50px;
 }
 
+.skills, .contact, footer {
+  color: whitesmoke;
+}
+
 h3 {
   font-family: "Manrope";
   font-size: 30px;
@@ -289,19 +293,33 @@ p {
 button {
   font-family: "Bebas Neue";
   font-size: 20px;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
 }
 
 header {
   background-color: #DEB887;
+  text-align: center;
+}
+header nav {
+  display: inline-block;
 }
 header nav ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 150px;
 }
 header nav ul a:link,
 header nav ul a:visited,
@@ -311,9 +329,65 @@ header nav ul a:active {
 }
 header .head {
   text-align: center;
+  margin-top: 200px;
+}
+header .head h1 {
+  margin-bottom: -20px;
+}
+header .head button {
+  margin-top: -10px;
+  margin-bottom: 200px;
+  border: none;
+  background-color: #BC8F8F;
+  padding: 15px;
+  cursor: pointer;
 }
 
 main .about {
   background-color: #FFE4C4;
+  text-align: center;
+}
+
+.skills {
+  background-color: #CD853F;
+  text-align: center;
+}
+.skills ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.projects {
+  background-color: #FFE4C4;
+  text-align: center;
+}
+
+.contact {
+  background-color: #F4A460;
+  text-align: center;
+}
+.contact ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.contact ul a:link,
+.contact ul a:visited,
+.contact ul a:hover,
+.contact ul a:active {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #A0522D;
   text-align: center;
 }
