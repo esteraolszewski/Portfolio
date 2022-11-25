@@ -1,0 +1,27 @@
+@use './variables';
+
+header {
+
+    background-color: variables.$headerBackground;
+
+    nav {        
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+
+            a:link,
+            a:visited,
+            a:hover,
+            a:active { 
+             text-decoration: none; 
+            }
+        }
+    
+    }
+
+    .head {
+        text-align: center;
+    }
+}

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope&family=Montserrat+Alternates:wght@900&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -235,4 +236,84 @@ html {
 img {
   max-width: 100%;
   display: block;
+}
+
+.skipLink {
+  position: absolute;
+  left: -1000px;
+  z-index: 10;
+  background: white;
+  color: black;
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
+.skipLink:focus {
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+a {
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+h1 {
+  font-family: "Montserrat Alternates";
+  font-size: 70px;
+  color: whitesmoke;
+}
+
+h2 {
+  font-family: "Montserrat Alternates";
+  font-size: 50px;
+}
+
+h3 {
+  font-family: "Manrope";
+  font-size: 30px;
+}
+
+.head p {
+  font-family: "Manrope";
+  font-size: 25px;
+  color: whitesmoke;
+}
+
+p {
+  font-family: "Manrope";
+}
+
+button {
+  font-family: "Bebas Neue";
+  font-size: 20px;
+}
+
+header {
+  background-color: #DEB887;
+}
+header nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header nav ul a:link,
+header nav ul a:visited,
+header nav ul a:hover,
+header nav ul a:active {
+  text-decoration: none;
+}
+header .head {
+  text-align: center;
+}
+
+main .about {
+  background-color: #FFE4C4;
+  text-align: center;
 }

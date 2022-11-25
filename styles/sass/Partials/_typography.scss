@@ -1,0 +1,43 @@
+@use './variables';
+
+// IMPORTED FONTS
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope&family=Montserrat+Alternates:wght@900&display=swap');
+
+
+a {
+    font-family: variables.$buttonFont;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+h1 {
+    font-family: variables.$headingFont;
+    font-size: 70px;
+    color: whitesmoke;
+}
+
+h2 {
+    font-family: variables.$headingFont;
+    font-size: 50px;
+}
+
+h3 {
+    font-family: variables.$bodyFont;
+    font-size: 30px;
+}
+
+.head p {
+    font-family: variables.$bodyFont;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+p {
+    font-family: variables.$bodyFont;
+}
+
+button {
+    font-family: variables.$buttonFont;
+    font-size: 20px;
+}

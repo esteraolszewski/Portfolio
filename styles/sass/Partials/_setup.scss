@@ -18,4 +18,20 @@ img {
     display: block;
 }
 
+.skipLink {
+    position: absolute;
+    left: -1000px;
+    z-index: 10;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    padding: 10px 0;
+}
+
+.skipLink:focus {
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
 // ADD SKIP LINK?

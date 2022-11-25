@@ -1,0 +1,9 @@
+@use './variables';
+
+main {
+    
+    .about {
+        background-color: variables.$bodyBackgroundOne;
+        text-align: center;
+    }
+}
