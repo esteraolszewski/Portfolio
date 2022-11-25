@@ -19,7 +19,7 @@ h1 {
 
 h2 {
     font-family: variables.$headingFont;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .skills, .contact, footer {
@@ -39,6 +39,7 @@ h3 {
 
 p {
     font-family: variables.$bodyFont;
+    line-height: 35px;
 }
 
 button {
@@ -51,4 +52,12 @@ button {
 button:hover {
     transform: scale(1.1);
     transition: 0.4s ease-in;
+}
+
+li {
+    font-family: variables.$bodyFont;
+}
+
+.projects a {
+    color: black;
 }

@@ -4,6 +4,60 @@
 
     background-color: variables.$bodyBackgroundOne;
     text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
-    
+    .firstProject {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+
+        .firstImage {
+            width: 50%;
+            display: flex;
+
+        }
+        .firstText {
+            width: 50%;
+            
+        }
+    }
+
+    .secondProject {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        width: 60%;
+
+        .secondImage {
+            width: 50%;
+            display: flex;
+        }
+
+        .secondText {
+            width: 50%;
+        }
+    }
+
+    .thirdProject {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+
+        .thirdImage {
+            width: 50%;
+            display: flex;
+        }
+
+        .thirdText {
+            width: 50%;
+        }
+    }
+
+    a:link,
+    a:visited,
+    a:hover,
+    a:active { 
+        text-decoration: none; 
+    }
 }

@@ -268,7 +268,7 @@ h1 {
 
 h2 {
   font-family: "Montserrat Alternates";
-  font-size: 50px;
+  font-size: 60px;
 }
 
 .skills, .contact, footer {
@@ -288,6 +288,7 @@ h3 {
 
 p {
   font-family: "Manrope";
+  line-height: 35px;
 }
 
 button {
@@ -302,6 +303,14 @@ button:hover {
           transform: scale(1.1);
   -webkit-transition: 0.4s ease-in;
   transition: 0.4s ease-in;
+}
+
+li {
+  font-family: "Manrope";
+}
+
+.projects a {
+  color: black;
 }
 
 header {
@@ -346,11 +355,20 @@ header .head button {
 main .about {
   background-color: #FFE4C4;
   text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+main .about p {
+  display: inline-block;
+  width: 700px;
+  margin-top: -20px;
 }
 
 .skills {
   background-color: #CD853F;
   text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .skills ul {
   list-style: none;
@@ -365,11 +383,76 @@ main .about {
 .projects {
   background-color: #FFE4C4;
   text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.projects .firstProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+}
+.projects .firstProject .firstImage {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projects .firstProject .firstText {
+  width: 50%;
+}
+.projects .secondProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 60%;
+}
+.projects .secondProject .secondImage {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projects .secondProject .secondText {
+  width: 50%;
+}
+.projects .thirdProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+}
+.projects .thirdProject .thirdImage {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projects .thirdProject .thirdText {
+  width: 50%;
+}
+.projects a:link,
+.projects a:visited,
+.projects a:hover,
+.projects a:active {
+  text-decoration: none;
 }
 
 .contact {
   background-color: #F4A460;
   text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .contact ul {
   list-style: none;
@@ -386,8 +469,56 @@ main .about {
 .contact ul a:active {
   text-decoration: none;
 }
+.contact p {
+  width: 60%;
+}
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+.contact form input[type=text] {
+  border: none;
+  padding: 15px;
+}
+.contact form textarea {
+  border: none;
+  padding: 15px;
+}
+.contact form ::-webkit-input-placeholder {
+  opacity: 0.2;
+}
+.contact form ::-moz-placeholder {
+  opacity: 0.2;
+}
+.contact form :-ms-input-placeholder {
+  opacity: 0.2;
+}
+.contact form ::-ms-input-placeholder {
+  opacity: 0.2;
+}
+.contact form ::placeholder {
+  opacity: 0.2;
+}
+.contact form button {
+  border: none;
+  background-color: #BC8F8F;
+  padding: 15px;
+  width: 20%;
+  cursor: pointer;
+}
 
 footer {
   background-color: #A0522D;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
