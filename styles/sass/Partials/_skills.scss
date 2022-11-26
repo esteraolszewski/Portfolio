@@ -12,7 +12,12 @@
         display: flex;
         justify-content: space-evenly;
 
-      
+      li {
+
+        svg {
+            vertical-align: text-bottom;
+        }
+      }
     
         
     }

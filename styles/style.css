@@ -278,6 +278,7 @@ h2 {
 h3 {
   font-family: "Manrope";
   font-size: 30px;
+  text-transform: uppercase;
 }
 
 .head p {
@@ -379,12 +380,25 @@ main .about p {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
+.skills ul li svg {
+  vertical-align: text-bottom;
+}
 
 .projects {
   background-color: #FFE4C4;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.projects a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #BC8F8F;
+  width: 100px;
 }
 .projects .firstProject {
   display: -webkit-box;
