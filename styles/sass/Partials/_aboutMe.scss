@@ -7,13 +7,29 @@ main {
         text-align: center;
         padding-top: 100px;
         padding-bottom: 100px;
+
+        .wrapper {
+            width: 50%;
+        }
         
 
         p {
             display: inline-block;
-            width: 50%;
             margin-top: -20px;
             margin-bottom: 50px;
         }
     }
+}
+
+// Media Queries
+
+@media (max-width:800px) {
+
+    .about {
+
+        .wrapper {
+            border: red 2px solid;
+        }
+    }
+    
 }

@@ -295,15 +295,6 @@ p {
 button {
   font-family: "Bebas Neue";
   font-size: 20px;
-  -webkit-transition: 0.4s ease-out;
-  transition: 0.4s ease-out;
-}
-
-button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.4s ease-in;
-  transition: 0.4s ease-in;
 }
 
 li {
@@ -351,6 +342,14 @@ header .head button {
   background-color: #BC8F8F;
   padding: 15px;
   cursor: pointer;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+header .head button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
 }
 
 main .about {
@@ -359,28 +358,51 @@ main .about {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+main .about .wrapper {
+  width: 50%;
+}
 main .about p {
   display: inline-block;
-  width: 50%;
   margin-top: -20px;
   margin-bottom: 50px;
 }
 
+@media (max-width: 800px) {
+  .about .wrapper {
+    border: red 2px solid;
+  }
+}
 .skills {
   background-color: #CD853F;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 150px;
 }
+.skills .iconFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.skills .iconFlex li {
+  width: 17%;
+}
 .skills ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding-top: 30px;
+  gap: 60px;
 }
 .skills ul li {
   font-size: 80px;
@@ -429,6 +451,14 @@ main .about p {
   text-align: center;
   background-color: #BC8F8F;
   padding: 10px 20px 10px 20px;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+.projects a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
 }
 .projects .firstProject {
   display: -webkit-box;
@@ -531,6 +561,43 @@ main .about p {
   text-decoration: none;
 }
 
+@media (max-width: 800px) {
+  .firstProject {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: red 2px solid;
+  }
+  .secondProject {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .thirdProject {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .contact {
   background-color: #F4A460;
   text-align: center;
@@ -614,6 +681,14 @@ main .about p {
   padding: 15px;
   width: 20%;
   cursor: pointer;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+.contact form button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
 }
 
 footer {
