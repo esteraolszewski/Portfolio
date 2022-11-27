@@ -227,6 +227,10 @@ html {
   overflow: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   max-width: 1280px;
   width: 90%;
@@ -373,7 +377,7 @@ main .about p {
   }
 }
 .skills {
-  background-color: #CD853F;
+  background-color: #B08968;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 150px;
@@ -599,7 +603,7 @@ main .about p {
   }
 }
 .contact {
-  background-color: #F4A460;
+  background-color: #DDB892;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -692,8 +696,14 @@ main .about p {
 }
 
 footer {
-  background-color: #A0522D;
+  background-color: #E6CCB2;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+@media (max-width: 400px) {
+  footer p {
+    font-size: 20px;
+  }
 }
