@@ -5,20 +5,13 @@
     background-color: variables.$bodyBackgroundTwo;
     text-align: center;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 
     ul {
         list-style: none;
         display: flex;
-        justify-content: space-evenly;
-
-      li {
-
-        svg {
-            vertical-align: text-bottom;
-        }
-      }
-    
+        justify-content: space-evenly;  
+        padding-top: 30px;  
         
     }
 }

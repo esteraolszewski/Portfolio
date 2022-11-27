@@ -369,7 +369,7 @@ main .about p {
   background-color: #CD853F;
   text-align: center;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 }
 .skills ul {
   list-style: none;
@@ -379,9 +379,7 @@ main .about p {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-}
-.skills ul li svg {
-  vertical-align: text-bottom;
+  padding-top: 30px;
 }
 
 .projects {
@@ -390,15 +388,38 @@ main .about p {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.projects a {
+.projects .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+.projects h2 {
+  margin-bottom: 10px;
+}
+.projects .skillUsed {
+  word-spacing: 40px;
+  opacity: 0.3;
+}
+.projects .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.projects a {
+  text-align: center;
   background-color: #BC8F8F;
-  width: 100px;
+  padding: 10px 20px 10px 20px;
 }
 .projects .firstProject {
   display: -webkit-box;
@@ -406,16 +427,19 @@ main .about p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 60%;
+  width: 80%;
 }
 .projects .firstProject .firstImage {
-  width: 50%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .projects .firstProject .firstText {
-  width: 50%;
+  width: 40%;
 }
 .projects .secondProject {
   display: -webkit-box;
@@ -427,16 +451,19 @@ main .about p {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  width: 60%;
+  width: 80%;
 }
 .projects .secondProject .secondImage {
-  width: 50%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .projects .secondProject .secondText {
-  width: 50%;
+  width: 40%;
 }
 .projects .thirdProject {
   display: -webkit-box;
@@ -444,16 +471,19 @@ main .about p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 60%;
+  width: 80%;
 }
 .projects .thirdProject .thirdImage {
-  width: 50%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .projects .thirdProject .thirdText {
-  width: 50%;
+  width: 40%;
 }
 .projects a:link,
 .projects a:visited,
@@ -468,6 +498,18 @@ main .about p {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .contact ul {
   list-style: none;
   display: -webkit-box;
@@ -476,6 +518,10 @@ main .about p {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  gap: 80px;
+}
+.contact ul a {
+  font-size: 40px;
 }
 .contact ul a:link,
 .contact ul a:visited,
@@ -484,7 +530,8 @@ main .about p {
   text-decoration: none;
 }
 .contact p {
-  width: 60%;
+  width: 55%;
+  font-size: 18px;
 }
 .contact form {
   display: -webkit-box;
