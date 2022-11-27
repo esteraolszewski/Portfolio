@@ -13,5 +13,13 @@
         justify-content: space-evenly;  
         padding-top: 30px;  
         
+        li {
+            font-size: 80px;
+
+            span {
+                display: block;
+                font-size: 20px;
+            }
+        }
     }
 }
