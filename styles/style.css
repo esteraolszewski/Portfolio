@@ -411,9 +411,10 @@ header .head button:hover {
   }
   header nav .navMenu .navItem a {
     font-size: 40px;
+    padding-right: 35px;
   }
   header nav .navMenu.active {
-    left: -18px;
+    left: 0px;
   }
 }
 @media (max-width: 430px) {
