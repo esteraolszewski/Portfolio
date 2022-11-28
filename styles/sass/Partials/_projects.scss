@@ -111,26 +111,27 @@
 
 @media (max-width:800px) {
 
-    .firstProject {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: red 2px solid;
-        
-    }
+    .projects {
+        .firstProject {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 140%;
+        }
 
-    .secondProject {
-        display: flex;
-    }
+        .secondProject {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 140%;
+        }
 
-    .thirdProject {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    a {
-        display: flex;
 
-    }
+        .thirdProject {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 140%;
+        }
+    } 
 }

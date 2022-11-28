@@ -24,12 +24,23 @@ main {
 // Media Queries
 
 @media (max-width:800px) {
-
+main {
     .about {
 
         .wrapper {
-            border: red 2px solid;
+            width: 70%;
         }
     }
-    
+}
+}
+
+@media (max-width:500px) {
+main {
+    .about {
+
+        .wrapper {
+            width: 90%;
+        }
+    }
+}   
 }

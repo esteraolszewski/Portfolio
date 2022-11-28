@@ -231,6 +231,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .wrapper {
   max-width: 1280px;
   width: 90%;
@@ -312,6 +316,7 @@ li {
 header {
   background-color: #DEB887;
   text-align: center;
+  height: 100vh;
 }
 header nav {
   display: inline-block;
@@ -331,6 +336,19 @@ header nav ul a:visited,
 header nav ul a:hover,
 header nav ul a:active {
   text-decoration: none;
+}
+header nav .hamburger {
+  display: none;
+  cursor: pointer;
+}
+header nav .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: whitesmoke;
 }
 header .head {
   text-align: center;
@@ -356,6 +374,53 @@ header .head button:hover {
   transition: 0.4s ease-in;
 }
 
+@media (max-width: 800px) {
+  header nav .hamburger {
+    display: block;
+    padding-top: 20px;
+  }
+  header nav .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  header nav .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  header nav .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  header nav .navMenu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #DEB887;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+  header nav .navMenu .navItem {
+    margin: 16px 0;
+  }
+  header nav .navMenu .navItem a {
+    font-size: 40px;
+  }
+  header nav .navMenu.active {
+    left: 0;
+  }
+}
+@media (max-width: 430px) {
+  header h1 {
+    font-size: 60px;
+  }
+}
 main .about {
   background-color: #FFE4C4;
   text-align: center;
@@ -372,8 +437,13 @@ main .about p {
 }
 
 @media (max-width: 800px) {
-  .about .wrapper {
-    border: red 2px solid;
+  main .about .wrapper {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  main .about .wrapper {
+    width: 90%;
   }
 }
 .skills {
@@ -393,7 +463,7 @@ main .about p {
           justify-content: center;
 }
 .skills .iconFlex li {
-  width: 17%;
+  width: 15%;
 }
 .skills ul {
   list-style: none;
@@ -402,11 +472,11 @@ main .about p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 30px;
-  gap: 60px;
+  gap: 20px;
 }
 .skills ul li {
   font-size: 80px;
@@ -416,6 +486,25 @@ main .about p {
   font-size: 20px;
 }
 
+@media (max-width: 700px) {
+  .skills .iconFlex ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15%;
+  }
+  .skills .iconFlex ul li span {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .skills .iconFlex ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20%;
+  }
+}
 .projects {
   background-color: #FFE4C4;
   text-align: center;
@@ -566,7 +655,7 @@ main .about p {
 }
 
 @media (max-width: 800px) {
-  .firstProject {
+  .projects .firstProject {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -577,14 +666,9 @@ main .about p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border: red 2px solid;
+    width: 140%;
   }
-  .secondProject {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .thirdProject {
+  .projects .secondProject {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -595,11 +679,20 @@ main .about p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 140%;
   }
-  a {
+  .projects .thirdProject {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 140%;
   }
 }
 .contact {
@@ -702,8 +795,16 @@ footer {
   padding-bottom: 10px;
 }
 
+@media (max-width: 820px) {
+  .contact .wrapper form {
+    width: 80%;
+  }
+  .contact .wrapper form button {
+    width: 50%;
+  }
+}
 @media (max-width: 400px) {
   footer p {
-    font-size: 20px;
+    font-size: 12px;
   }
 }

@@ -13,7 +13,7 @@
         justify-content: center;
 
         li {
-            width: 17%;
+            width: 15%;
         }
     }
 
@@ -21,9 +21,9 @@
         list-style: none;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;  
+        justify-content: center;  
         padding-top: 30px;  
-        gap: 60px;
+        gap: 20px;
        
         
         li {
@@ -38,3 +38,39 @@
         }
     }
 }
+
+// Media Queries
+
+@media (max-width: 700px) {
+    .skills {
+
+        .iconFlex {
+
+            ul {
+            display: flex;
+            gap: 15%;
+
+                li {
+                    
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .skills {
+
+        .iconFlex {
+
+            ul {
+            display: flex;
+            gap: 20%;
+            }
+        }
+    }
+}
+
