@@ -57,11 +57,12 @@ header {
     }
 
     .imageFlip {
-        transform: translate(-50px, -410px);
+        // transform: translate(-50px, -410px);
 
         img {
             height: 100vh;
             object-fit: cover;
+            transform: translate(-50px, -410px);
         }
 
         

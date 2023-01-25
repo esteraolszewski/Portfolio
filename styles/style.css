@@ -364,14 +364,12 @@ header .head {
 header .head h1 {
   margin-bottom: -20px;
 }
-header .imageFlip {
-  -webkit-transform: translate(-50px, -410px);
-          transform: translate(-50px, -410px);
-}
 header .imageFlip img {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transform: translate(-50px, -410px);
+          transform: translate(-50px, -410px);
 }
 
 @media (max-width: 837px) {
