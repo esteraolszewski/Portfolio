@@ -270,13 +270,14 @@ a {
 
 h1 {
   font-family: "Montserrat Alternates";
-  font-size: 70px;
+  font-size: 80px;
   color: whitesmoke;
 }
 
 h2 {
   font-family: "Montserrat Alternates";
   font-size: 60px;
+  color: whitesmoke;
 }
 
 .skills, .contact, footer {
@@ -287,6 +288,7 @@ h3 {
   font-family: "Manrope";
   font-size: 30px;
   text-transform: uppercase;
+  color: whitesmoke;
 }
 
 .head p {
@@ -298,6 +300,7 @@ h3 {
 p {
   font-family: "Manrope";
   line-height: 35px;
+  color: whitesmoke;
 }
 
 button {
@@ -314,11 +317,13 @@ li {
 }
 
 header {
-  background-color: #DEB887;
+  background-color: #242B31;
   text-align: center;
   height: 100vh;
 }
 header nav {
+  position: relative;
+  z-index: 2;
   display: inline-block;
 }
 header nav ul {
@@ -353,27 +358,28 @@ header nav .hamburger .bar {
 header .head {
   text-align: center;
   margin-top: 200px;
+  position: relative;
+  z-index: 1;
 }
 header .head h1 {
   margin-bottom: -20px;
 }
-header .head button {
-  margin-top: -10px;
-  margin-bottom: 200px;
-  border: none;
-  background-color: #BC8F8F;
-  padding: 15px;
-  cursor: pointer;
-  -webkit-transition: 0.4s ease-out;
-  transition: 0.4s ease-out;
+header .imageFlip {
+  -webkit-transform: translate(-50px, -410px);
+          transform: translate(-50px, -410px);
 }
-header .head button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.4s ease-in;
-  transition: 0.4s ease-in;
+header .imageFlip img {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
+@media (max-width: 837px) {
+  header .imageFlip {
+    -webkit-transform: translate(-50px, -504px);
+            transform: translate(-50px, -504px);
+  }
+}
 @media (max-width: 800px) {
   header nav .hamburger {
     display: block;
@@ -399,7 +405,7 @@ header .head button:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #DEB887;
+    background-color: #242B31;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -417,13 +423,13 @@ header .head button:hover {
     left: 0px;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 480px) {
   header h1 {
-    font-size: 60px;
+    font-size: 40px;
   }
 }
 main .about {
-  background-color: #FFE4C4;
+  background-color: #242B31;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -448,7 +454,7 @@ main .about p {
   }
 }
 .skills {
-  background-color: #B08968;
+  background-color: #242B31;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 150px;
@@ -510,7 +516,7 @@ main .about p {
   }
 }
 .projects {
-  background-color: #FFE4C4;
+  background-color: #242B31;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -546,7 +552,7 @@ main .about p {
 }
 .projects a {
   text-align: center;
-  background-color: #BC8F8F;
+  background-color: #70A288;
   padding: 10px 20px 10px 20px;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
@@ -720,7 +726,7 @@ main .about p {
   }
 }
 .contact {
-  background-color: #DDB892;
+  background-color: #242B31;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -799,7 +805,7 @@ main .about p {
 }
 .contact form button {
   border: none;
-  background-color: #BC8F8F;
+  background-color: #70A288;
   padding: 15px;
   width: 20%;
   cursor: pointer;
@@ -814,7 +820,7 @@ main .about p {
 }
 
 footer {
-  background-color: #E6CCB2;
+  background-color: #242B31;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;

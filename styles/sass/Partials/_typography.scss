@@ -13,13 +13,14 @@ a {
 
 h1 {
     font-family: variables.$headingFont;
-    font-size: 70px;
+    font-size: 80px;
     color: whitesmoke;
 }
 
 h2 {
     font-family: variables.$headingFont;
     font-size: 60px;
+    color: whitesmoke;
 }
 
 .skills, .contact, footer {
@@ -30,6 +31,7 @@ h3 {
     font-family: variables.$bodyFont;
     font-size: 30px;
     text-transform: uppercase;
+    color: whitesmoke;
 }
 
 .head p {
@@ -41,6 +43,7 @@ h3 {
 p {
     font-family: variables.$bodyFont;
     line-height: 35px;
+    color: whitesmoke;
 }
 
 button {

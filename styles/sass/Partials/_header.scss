@@ -1,13 +1,13 @@
 @use './variables';
 
 header {
-
     background-color: variables.$headerBackground;
     text-align: center;
     height: 100vh;
 
     nav {  
-        
+        position: relative;
+        z-index: 2;
         display: inline-block;
 
         ul {
@@ -46,30 +46,40 @@ header {
     .head {
         text-align: center;
         margin-top: 200px;
+        position: relative;
+        z-index: 1;
 
         h1 {
             margin-bottom: -20px;
         }
 
-        button {
-            margin-top: -10px;
-            margin-bottom: 200px;
-            border: none;
-            background-color: #BC8F8F;
-            padding: 15px;
-            cursor: pointer;
-            transition: 0.4s ease-out;
+        
+    }
 
+    .imageFlip {
+        transform: translate(-50px, -410px);
+
+        img {
+            height: 100vh;
+            object-fit: cover;
         }
 
-        button:hover {
-            transform: scale(1.1);
-            transition: 0.4s ease-in;
-        }
+        
     }
 }
 
 // Media Queries
+
+@media (max-width:837px) {
+
+    header {
+
+        .imageFlip {
+            transform: translate(-50px, -504px); 
+            
+        }
+    }
+}
 
 @media (max-width:800px) {
 
@@ -127,10 +137,10 @@ header {
 }
 
 
-@media (max-width: 430px) {
+@media (max-width: 480px) {
     header {
         h1 {
-            font-size: 60px;
+            font-size: 40px;
         }
     }
 }
