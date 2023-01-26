@@ -38,7 +38,6 @@ header {
             display: flex;
             justify-content: space-evenly;
             gap: 150px;
-        
 
             a:link,
             a:visited,
@@ -83,7 +82,7 @@ header {
         height: 2px;
 
         img {
-            height: 100vh;
+            width: clamp(700px, 100%, 50px);
             object-fit: cover;
             transform: translate(-50px, -410px);
         }
@@ -93,17 +92,6 @@ header {
 }
 
 // Media Queries
-
-@media (max-width:837px) {
-
-    header {
-
-        .imageFlip {
-            transform: translate(-50px, -504px); 
-            
-        }
-    }
-}
 
 @media (max-width:800px) {
 
@@ -166,5 +154,11 @@ header {
         h1 {
             font-size: 40px;
         }
+
+        .imageFlip {
+        img {
+            transform: translate(5px, -250px); 
+        }
+    }
     }
 }

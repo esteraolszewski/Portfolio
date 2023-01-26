@@ -396,19 +396,13 @@ header .imageFlip {
   height: 2px;
 }
 header .imageFlip img {
-  height: 100vh;
+  width: clamp(700px, 100%, 50px);
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transform: translate(-50px, -410px);
           transform: translate(-50px, -410px);
 }
 
-@media (max-width: 837px) {
-  header .imageFlip {
-    -webkit-transform: translate(-50px, -504px);
-            transform: translate(-50px, -504px);
-  }
-}
 @media (max-width: 800px) {
   header nav .hamburger {
     display: block;
@@ -455,6 +449,10 @@ header .imageFlip img {
 @media (max-width: 480px) {
   header h1 {
     font-size: 40px;
+  }
+  header .imageFlip img {
+    -webkit-transform: translate(5px, -250px);
+            transform: translate(5px, -250px);
   }
 }
 main .about {
