@@ -99,6 +99,26 @@
         }
     }
 
+    .fourthProject {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        width: 80%;
+
+        .fourthImage {
+            width: 60%;
+            display: flex;
+            align-items: center;
+        }
+
+        .fourthText {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
     a:link,
     a:visited,
     a:hover,
