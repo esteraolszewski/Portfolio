@@ -392,7 +392,7 @@ header .imageFlip {
   height: 2px;
 }
 header .imageFlip img {
-  width: clamp(480px, 100%, 800px);
+  width: clamp(300px, 100%, 800px);
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transform: translate(-50px, -410px);
