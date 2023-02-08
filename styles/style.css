@@ -231,10 +231,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .wrapper {
   max-width: 1280px;
   width: 90%;
@@ -270,7 +266,7 @@ a {
 
 h1 {
   font-family: "Montserrat Alternates";
-  font-size: 80px;
+  font-size: clamp(2.5rem, 0.125rem + 7.9167vw, 8.4375rem);
   color: whitesmoke;
 }
 
@@ -384,7 +380,7 @@ header nav .hamburger .bar {
   background-color: whitesmoke;
 }
 header .head {
-  text-align: center;
+  text-align: end;
   margin-top: 200px;
   position: relative;
   z-index: 1;
@@ -396,7 +392,7 @@ header .imageFlip {
   height: 2px;
 }
 header .imageFlip img {
-  width: clamp(700px, 100%, 50px);
+  width: clamp(480px, 100%, 800px);
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transform: translate(-50px, -410px);
@@ -627,11 +623,7 @@ main .about p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  width: 80%;
+  width: 70%;
 }
 .projects .secondProject .secondImage {
   width: 60%;
@@ -661,7 +653,7 @@ main .about p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 80%;
+  width: 70%;
 }
 .projects .thirdProject .thirdImage {
   width: 60%;
@@ -691,11 +683,7 @@ main .about p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  width: 80%;
+  width: 70%;
 }
 .projects .fourthProject .fourthImage {
   width: 60%;
@@ -766,6 +754,19 @@ main .about p {
             align-items: center;
     width: 90%;
   }
+  .projects .fourthProject {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+  }
 }
 @media (max-width: 650px) {
   .projects .firstProject .firstImage {
@@ -784,6 +785,12 @@ main .about p {
     width: 90%;
   }
   .projects .thirdProject .thirdText {
+    width: 80%;
+  }
+  .projects .fourthProject .fourthImage {
+    width: 90%;
+  }
+  .projects .fourthProject .fourthText {
     width: 80%;
   }
 }
@@ -829,57 +836,6 @@ main .about p {
   width: 55%;
   font-size: 18px;
 }
-.contact form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 10px;
-  width: 50%;
-}
-.contact form input[type=text] {
-  border: none;
-  padding: 15px;
-}
-.contact form textarea {
-  border: none;
-  padding: 15px;
-}
-.contact form ::-webkit-input-placeholder {
-  opacity: 0.2;
-}
-.contact form ::-moz-placeholder {
-  opacity: 0.2;
-}
-.contact form :-ms-input-placeholder {
-  opacity: 0.2;
-}
-.contact form ::-ms-input-placeholder {
-  opacity: 0.2;
-}
-.contact form ::placeholder {
-  opacity: 0.2;
-}
-.contact form button {
-  border: none;
-  background-color: #70A288;
-  padding: 15px;
-  width: 20%;
-  cursor: pointer;
-  -webkit-transition: 0.4s ease-out;
-  transition: 0.4s ease-out;
-}
-.contact form button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.4s ease-in;
-  transition: 0.4s ease-in;
-}
 
 footer {
   background-color: #242B31;
@@ -888,14 +844,6 @@ footer {
   padding-bottom: 10px;
 }
 
-@media (max-width: 820px) {
-  .contact .wrapper form {
-    width: 80%;
-  }
-  .contact .wrapper form button {
-    width: 50%;
-  }
-}
 @media (max-width: 400px) {
   footer p {
     font-size: 12px;

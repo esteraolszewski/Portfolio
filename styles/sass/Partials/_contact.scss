@@ -38,42 +38,6 @@
         font-size: 18px;
     }
 
-    form {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        gap: 10px;
-        width: 50%;
-
-        input[type=text] {
-            border: none;
-            padding: 15px;
-        }
-
-        textarea {
-            border: none;
-            padding: 15px;
-        }
-
-        ::placeholder {
-            opacity: 0.2; 
-        }
-
-        button {
-            border: none;
-            background-color: #70A288;
-            padding: 15px;
-            width: 20%;
-            cursor: pointer;
-            transition: 0.4s ease-out;
-            
-        }
-
-        button:hover {
-            transform: scale(1.1);
-            transition: 0.4s ease-in;
-        }
-    }
 }
 
 footer {
@@ -86,22 +50,6 @@ footer {
 
 // Media Queries
 
-@media (max-width: 820px ) {
-
-    .contact {
-
-        .wrapper {
-
-            form {
-                width: 80%;
-
-                button {
-                    width: 50%;
-                }
-            }
-        }
-    }
-}
 
 @media (max-width: 400px) {
     footer {

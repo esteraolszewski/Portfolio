@@ -63,8 +63,7 @@
     .secondProject {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row-reverse;
-        width: 80%;
+        width: 70%;
 
         .secondImage {
             width: 60%;
@@ -83,7 +82,7 @@
     .thirdProject {
         display: flex;
         flex-wrap: wrap;
-        width: 80%;
+        width: 70%;
 
         .thirdImage {
             width: 60%;
@@ -102,8 +101,7 @@
     .fourthProject {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row-reverse;
-        width: 80%;
+        width: 70%;
 
         .fourthImage {
             width: 60%;
@@ -153,6 +151,13 @@
             align-items: center;
             width: 90%;
         }
+
+        .fourthProject {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+        }
     } 
 }
 
@@ -194,6 +199,19 @@
             }
 
             .thirdText {
+
+                width: 80%;
+            }
+        }
+
+        .fourthProject {
+
+            .fourthImage {
+
+                width: 90%;
+            }
+
+            .fourthText {
 
                 width: 80%;
             }

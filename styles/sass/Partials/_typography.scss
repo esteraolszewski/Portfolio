@@ -13,7 +13,7 @@ a {
 
 h1 {
     font-family: variables.$headingFont;
-    font-size: 80px;
+    font-size: clamp(2.5rem, 0.125rem + 7.9167vw, 8.4375rem);
     color: whitesmoke;
 }
 
