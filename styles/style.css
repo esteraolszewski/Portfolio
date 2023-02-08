@@ -593,7 +593,7 @@ main .about p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 70%;
+  width: 90%;
 }
 .projects .firstProject .firstImage {
   width: 60%;
@@ -605,7 +605,7 @@ main .about p {
           align-items: center;
 }
 .projects .firstProject .firstText {
-  width: 40%;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -623,7 +623,11 @@ main .about p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 70%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 90%;
 }
 .projects .secondProject .secondImage {
   width: 60%;
@@ -635,7 +639,7 @@ main .about p {
           align-items: center;
 }
 .projects .secondProject .secondText {
-  width: 40%;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -653,7 +657,7 @@ main .about p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 70%;
+  width: 90%;
 }
 .projects .thirdProject .thirdImage {
   width: 60%;
@@ -665,7 +669,7 @@ main .about p {
           align-items: center;
 }
 .projects .thirdProject .thirdText {
-  width: 40%;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,7 +687,11 @@ main .about p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 70%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 90%;
 }
 .projects .fourthProject .fourthImage {
   width: 60%;
@@ -695,7 +703,7 @@ main .about p {
           align-items: center;
 }
 .projects .fourthProject .fourthText {
-  width: 40%;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

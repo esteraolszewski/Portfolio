@@ -44,7 +44,7 @@
     .firstProject {
         display: flex;
         flex-wrap: wrap;
-        width: 70%;
+        width: 90%;
 
         .firstImage {
             width: 60%;
@@ -53,7 +53,7 @@
 
         }
         .firstText {
-            width: 40%;
+            width: 30%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -63,7 +63,8 @@
     .secondProject {
         display: flex;
         flex-wrap: wrap;
-        width: 70%;
+        flex-direction: row-reverse;
+        width: 90%;
 
         .secondImage {
             width: 60%;
@@ -72,7 +73,7 @@
         }
 
         .secondText {
-            width: 40%;
+            width: 30%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -82,7 +83,7 @@
     .thirdProject {
         display: flex;
         flex-wrap: wrap;
-        width: 70%;
+        width: 90%;
 
         .thirdImage {
             width: 60%;
@@ -91,7 +92,7 @@
         }
 
         .thirdText {
-            width: 40%;
+            width: 30%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -101,7 +102,8 @@
     .fourthProject {
         display: flex;
         flex-wrap: wrap;
-        width: 70%;
+        flex-direction: row-reverse;
+        width: 90%;
 
         .fourthImage {
             width: 60%;
@@ -110,7 +112,7 @@
         }
 
         .fourthText {
-            width: 40%;
+            width: 30%;
             display: flex;
             flex-direction: column;
             justify-content: center;
