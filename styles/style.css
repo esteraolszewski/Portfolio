@@ -547,6 +547,190 @@ main .about p {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.projects .carousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.projects .carousel .carouselButton {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.projects .carousel .carouselButton:hover,
+.projects .carousel .carouselButton:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.projects .carousel .carouselButton.prev {
+  left: 1rem;
+}
+.projects .carousel .carouselButton.next {
+  right: 1rem;
+}
+.projects .carousel .slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+.projects .carousel .slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.projects .carousel .slide[data-active] {
+  opacity: 1;
+}
+.projects .carousel .firstText {
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  width: clamp(100px, 100%, 430px);
+  background-color: rgba(1, 1, 1, 0.2);
+  padding: 30px;
+  border-radius: 50%;
+}
+.projects .carousel .firstText .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.projects .carousel .firstText a {
+  text-align: center;
+  background-color: rgba(1, 1, 1, 0.2);
+  padding: 10px 20px 10px 20px;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projects .carousel .firstText a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+}
+.projects .carousel .secondText, .projects .carousel .thirdText {
+  position: absolute;
+  top: 30px;
+  right: 69px;
+  width: clamp(100px, 100%, 430px);
+  background-color: rgba(193, 204, 210, 0.5);
+  padding: 30px;
+  border-radius: 50%;
+}
+.projects .carousel .secondText .links, .projects .carousel .thirdText .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.projects .carousel .secondText a, .projects .carousel .thirdText a {
+  text-align: center;
+  background-color: rgba(1, 1, 1, 0.2);
+  padding: 10px 20px 10px 20px;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projects .carousel .secondText a:hover, .projects .carousel .thirdText a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+}
+.projects .carousel .fourthText {
+  position: absolute;
+  top: 65px;
+  left: 188px;
+  width: clamp(100px, 100%, 350px);
+  background-color: rgba(12, 173, 192, 0.2);
+  padding: 30px;
+  border-radius: 50%;
+}
+.projects .carousel .fourthText .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.projects .carousel .fourthText a {
+  text-align: center;
+  background-color: rgba(1, 1, 1, 0.2);
+  padding: 10px 20px 10px 20px;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projects .carousel .fourthText a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+}
+.projects .carousel .fifthText {
+  position: absolute;
+  top: 10px;
+  left: 85px;
+  width: clamp(100px, 100%, 430px);
+  background-color: rgba(1, 1, 1, 0.2);
+  padding: 30px;
+  border-radius: 50%;
+}
+.projects .carousel .fifthText .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.projects .carousel .fifthText a {
+  text-align: center;
+  background-color: rgba(1, 1, 1, 0.2);
+  padding: 10px 20px 10px 20px;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projects .carousel .fifthText a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+}
 .projects .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -560,162 +744,10 @@ main .about p {
           align-items: center;
   gap: 40px;
 }
-.projects h2 {
-  margin-bottom: 10px;
-}
 .projects .skillUsed {
   word-spacing: 40px;
   opacity: 0.3;
   margin: -8px 0 -8px 0;
-}
-.projects .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-.projects a {
-  text-align: center;
-  background-color: #70A288;
-  padding: 10px 20px 10px 20px;
-  -webkit-transition: 0.4s ease-out;
-  transition: 0.4s ease-out;
-}
-.projects a:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.4s ease-in;
-  transition: 0.4s ease-in;
-}
-.projects .firstProject {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 90%;
-}
-.projects .firstProject .firstImage {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.projects .firstProject .firstText {
-  width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.projects .secondProject {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  width: 90%;
-}
-.projects .secondProject .secondImage {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.projects .secondProject .secondText {
-  width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.projects .thirdProject {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 90%;
-}
-.projects .thirdProject .thirdImage {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.projects .thirdProject .thirdText {
-  width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.projects .fourthProject {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  width: 90%;
-}
-.projects .fourthProject .fourthImage {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.projects .fourthProject .fourthText {
-  width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .projects a:link,
 .projects a:visited,
@@ -724,84 +756,27 @@ main .about p {
   text-decoration: none;
 }
 
-@media (max-width: 800px) {
-  .projects .firstProject {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 90%;
+@media (max-width: 1080px) {
+  .projects .carousel .firstText {
+    background-color: rgba(1, 1, 1, 0.8);
   }
-  .projects .secondProject {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 90%;
+  .projects .carousel .secondText, .projects .carousel .thirdText {
+    background-color: rgba(193, 204, 210, 0.8);
   }
-  .projects .thirdProject {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 90%;
+  .projects .carousel .fourthText {
+    background-color: rgba(12, 173, 192, 0.8);
   }
-  .projects .fourthProject {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 90%;
+  .projects .carousel .fifthText {
+    background-color: rgba(1, 1, 1, 0.8);
   }
 }
-@media (max-width: 650px) {
-  .projects .firstProject .firstImage {
-    width: 90%;
+@media (max-width: 800px) {
+  .projects .carousel .firstText {
+    top: 430px;
   }
-  .projects .firstProject .firstText {
-    width: 80%;
-  }
-  .projects .secondProject .secondImage {
-    width: 90%;
-  }
-  .projects .secondProject .secondText {
-    width: 80%;
-  }
-  .projects .thirdProject .thirdImage {
-    width: 90%;
-  }
-  .projects .thirdProject .thirdText {
-    width: 80%;
-  }
-  .projects .fourthProject .fourthImage {
-    width: 90%;
-  }
-  .projects .fourthProject .fourthText {
-    width: 80%;
+  .projects .carousel .fourthText {
+    top: 500px;
+    left: 150px;
   }
 }
 .contact {

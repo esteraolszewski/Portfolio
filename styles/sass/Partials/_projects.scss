@@ -7,6 +7,176 @@
     padding-top: 100px;
     padding-bottom: 100px;
 
+    .carousel {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+
+        .carouselButton {
+            position: absolute;
+            z-index: 2;
+            background: none;
+            border: none;
+            font-size: 4rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, .5);
+            cursor: pointer;
+            border-radius: 50%;
+            padding: 0 .5rem;
+            background-color: rgba(0, 0, 0, .1);
+        }
+
+        .carouselButton:hover,
+        .carouselButton:focus {
+            color: white;
+            background-color: rgba(0, 0, 0, .2);
+
+        } 
+
+        .carouselButton.prev {
+            left: 1rem;
+        }
+
+        .carouselButton.next {
+            right: 1rem;
+        }
+
+        .slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+        }
+
+        .slide > img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .slide[data-active] {
+            opacity: 1;
+        }
+
+        .firstText {
+            position: absolute;
+            top: 30px;
+            left: 80px;
+            width: clamp(100px, 100%, 430px);
+            background-color: rgba(1, 1, 1, 0.2);
+            padding: 30px;
+            border-radius: 50%;
+
+            .links {
+                display: flex;
+                justify-content: space-evenly;
+            }
+        
+            a {
+                text-align: center;
+                background-color: rgba(1, 1, 1, 0.2);
+                padding: 10px 20px 10px 20px;
+                transition: 0.4s ease-out;
+                z-index: 2;
+                display: flex;
+            }
+        
+            a:hover {
+                transform: scale(1.1);
+                transition: 0.4s ease-in;
+            }
+        }
+
+        .secondText, .thirdText {
+            position: absolute;
+            top: 30px;
+            right: 69px;
+            width: clamp(100px, 100%, 430px);
+            background-color: rgba(193, 204, 210, 0.5);
+            padding: 30px;
+            border-radius: 50%;
+
+            .links {
+                display: flex;
+                justify-content: space-evenly;
+            }
+        
+            a {
+                text-align: center;
+                background-color: rgba(1, 1, 1, 0.2);
+                padding: 10px 20px 10px 20px;
+                transition: 0.4s ease-out;
+                z-index: 2;
+                display: flex;
+            }
+        
+            a:hover {
+                transform: scale(1.1);
+                transition: 0.4s ease-in;
+            }
+        }
+
+        .fourthText {
+            position: absolute;
+            top: 65px;
+            left: 188px;
+            width: clamp(100px, 100%, 350px);
+            background-color: rgba(12, 173, 192, 0.2);
+            padding: 30px;
+            border-radius: 50%;
+
+            .links {
+                display: flex;
+                justify-content: space-evenly;
+            }
+        
+            a {
+                text-align: center;
+                background-color: rgba(1, 1, 1, 0.2);
+                padding: 10px 20px 10px 20px;
+                transition: 0.4s ease-out;
+                z-index: 2;
+                display: flex;
+            }
+        
+            a:hover {
+                transform: scale(1.1);
+                transition: 0.4s ease-in;
+            }
+        }
+
+        .fifthText {
+            position: absolute;
+            top: 10px;
+            left: 85px;
+            width: clamp(100px, 100%, 430px);
+            background-color: rgba(1, 1, 1, 0.2);
+            padding: 30px;
+            border-radius: 50%;
+
+            .links {
+                display: flex;
+                justify-content: space-evenly;
+            }
+        
+            a {
+                text-align: center;
+                background-color: rgba(1, 1, 1, 0.2);
+                padding: 10px 20px 10px 20px;
+                transition: 0.4s ease-out;
+                z-index: 2;
+                display: flex;
+            }
+        
+            a:hover {
+                transform: scale(1.1);
+                transition: 0.4s ease-in;
+            }
+        }
+    }
+
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -14,9 +184,9 @@
         gap: 40px;
     }
 
-    h2 {
-        margin-bottom: 10px;
-    }
+    // h2 {
+    //     margin-bottom: 10px;
+    // }
 
     .skillUsed {
         word-spacing: 40px;
@@ -24,100 +194,6 @@
         margin: -8px 0 -8px 0;
     }
 
-    .links {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    a {
-        text-align: center;
-        background-color: #70A288;
-        padding: 10px 20px 10px 20px;
-        transition: 0.4s ease-out;
-    }
-
-    a:hover {
-        transform: scale(1.1);
-        transition: 0.4s ease-in;
-    }
-
-    .firstProject {
-        display: flex;
-        flex-wrap: wrap;
-        width: 90%;
-
-        .firstImage {
-            width: 60%;
-            display: flex;
-            align-items: center;
-
-        }
-        .firstText {
-            width: 30%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    }
-
-    .secondProject {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
-        width: 90%;
-
-        .secondImage {
-            width: 60%;
-            display: flex;
-            align-items: center;
-        }
-
-        .secondText {
-            width: 30%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    }
-
-    .thirdProject {
-        display: flex;
-        flex-wrap: wrap;
-        width: 90%;
-
-        .thirdImage {
-            width: 60%;
-            display: flex;
-            align-items: center;
-        }
-
-        .thirdText {
-            width: 30%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    }
-
-    .fourthProject {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
-        width: 90%;
-
-        .fourthImage {
-            width: 60%;
-            display: flex;
-            align-items: center;
-        }
-
-        .fourthText {
-            width: 30%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    }
 
     a:link,
     a:visited,
@@ -129,94 +205,43 @@
 
 // Media Queries
 
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
 
     .projects {
-        .firstProject {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 90%;
-        }
-
-        .secondProject {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 90%;
-        }
-
-
-        .thirdProject {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 90%;
-        }
-
-        .fourthProject {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 90%;
-        }
-    } 
-}
-
-@media (max-width: 650px) {
-
-    .projects {
-
-        .firstProject {
-
-            .firstImage {
-
-                width: 90%;
-            }
-
+        .carousel {
             .firstText {
-
-                width: 80%;
-            }
-        }
-
-        .secondProject {
-
-            .secondImage {
-
-                width: 90%;
+                background-color: rgba(1, 1, 1, 0.8);
             }
 
-            .secondText {
-
-                width: 80%;
-            }
-        }
-
-        .thirdProject {
-
-            .thirdImage {
-
-                width: 90%;
-            }
-
-            .thirdText {
-
-                width: 80%;
-            }
-        }
-
-        .fourthProject {
-
-            .fourthImage {
-
-                width: 90%;
+            .secondText, .thirdText {
+                background-color: rgba(193, 204, 210, 0.8);
             }
 
             .fourthText {
+                background-color: rgba(12, 173, 192, 0.8);
+            }
 
-                width: 80%;
+            .fifthText {
+                background-color: rgba(1, 1, 1, 0.8);
+
             }
         }
     }
+}
+
+@media (max-width: 800px) {
+    .projects {
+        .carousel {
+            .firstText {
+                top: 430px;
+            }
+
+            .fourthText {
+                top: 500px;
+                left: 150px;
+
+            }
+        }
+    }
+     
 }
