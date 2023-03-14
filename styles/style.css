@@ -857,18 +857,25 @@ main .about p {
   .projects .carousel .firstText {
     -webkit-transform: translate(45px, -555px);
             transform: translate(45px, -555px);
+    width: 85%;
   }
   .projects .carousel .secondText {
     -webkit-transform: translate(50px, -999px);
             transform: translate(50px, -999px);
+    width: 85%;
   }
   .projects .carousel .thirdText {
     -webkit-transform: translate(55px, -515px);
             transform: translate(55px, -515px);
+    width: 85%;
+  }
+  .projects .carousel .fourthText {
+    width: 66%;
   }
   .projects .carousel .fifthText {
     -webkit-transform: translate(50px, -555px);
             transform: translate(50px, -555px);
+    width: 85%;
   }
 }
 .contact {

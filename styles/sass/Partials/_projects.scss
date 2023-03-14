@@ -360,20 +360,51 @@
         .carousel {
             .firstText {
                 transform: translate(45px, -555px);
+                width: 85%;
             }
 
             .secondText {
                 transform: translate(50px, -999px);
+                width: 85%;
             }
 
             .thirdText {
                 transform: translate(55px, -515px);
+                width: 85%;
+            }
+
+            .fourthText {
+                width: 66%;
             }
 
             .fifthText {
                 transform: translate(50px, -555px);
+                width: 85%;
             }
         }
     }
      
 }
+
+// @media (max-width: 480px) {
+//     .projects {
+//         .carousel {
+//             .firstText {
+//                 transform: translate(45px, -555px);
+//             }
+
+//             .secondText {
+//                 transform: translate(50px, -999px);
+//             }
+
+//             .thirdText {
+//                 transform: translate(55px, -515px);
+//             }
+
+//             .fifthText {
+//                 transform: translate(50px, -555px);
+//             }
+//         }
+//     }
+     
+// }
