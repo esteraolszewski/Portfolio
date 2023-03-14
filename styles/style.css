@@ -597,12 +597,13 @@ main .about p {
 }
 .projects .carousel .firstText {
   position: absolute;
-  top: 30px;
-  left: 80px;
   width: clamp(100px, 100%, 430px);
-  background-color: rgba(1, 1, 1, 0.2);
-  padding: 30px;
+  -webkit-transform: translate(120px, -555px);
+          transform: translate(120px, -555px);
+  background-color: rgba(253, 176, 0, 0.3);
+  padding: 35px;
   border-radius: 50%;
+  z-index: 2;
 }
 .projects .carousel .firstText .links {
   display: -webkit-box;
@@ -614,7 +615,7 @@ main .about p {
 }
 .projects .carousel .firstText a {
   text-align: center;
-  background-color: rgba(1, 1, 1, 0.2);
+  background-color: rgba(252, 252, 252, 0.5);
   padding: 10px 20px 10px 20px;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
@@ -629,16 +630,17 @@ main .about p {
   -webkit-transition: 0.4s ease-in;
   transition: 0.4s ease-in;
 }
-.projects .carousel .secondText, .projects .carousel .thirdText {
+.projects .carousel .secondText {
   position: absolute;
-  top: 30px;
-  right: 69px;
   width: clamp(100px, 100%, 430px);
+  -webkit-transform: translate(955px, -700px);
+          transform: translate(955px, -700px);
   background-color: rgba(193, 204, 210, 0.5);
-  padding: 30px;
+  padding: 50px;
   border-radius: 50%;
+  z-index: 2;
 }
-.projects .carousel .secondText .links, .projects .carousel .thirdText .links {
+.projects .carousel .secondText .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,9 +648,9 @@ main .about p {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-.projects .carousel .secondText a, .projects .carousel .thirdText a {
+.projects .carousel .secondText a {
   text-align: center;
-  background-color: rgba(1, 1, 1, 0.2);
+  background-color: rgba(252, 252, 252, 0.5);
   padding: 10px 20px 10px 20px;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
@@ -657,7 +659,42 @@ main .about p {
   display: -ms-flexbox;
   display: flex;
 }
-.projects .carousel .secondText a:hover, .projects .carousel .thirdText a:hover {
+.projects .carousel .secondText a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+}
+.projects .carousel .thirdText {
+  position: absolute;
+  width: clamp(100px, 100%, 430px);
+  -webkit-transform: translate(160px, -566px);
+          transform: translate(160px, -566px);
+  background-color: rgba(248, 115, 111, 0.5);
+  padding: 50px;
+  border-radius: 50%;
+  z-index: 2;
+}
+.projects .carousel .thirdText .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.projects .carousel .thirdText a {
+  text-align: center;
+  background-color: rgba(252, 252, 252, 0.5);
+  padding: 10px 20px 10px 20px;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projects .carousel .thirdText a:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: 0.4s ease-in;
@@ -665,12 +702,13 @@ main .about p {
 }
 .projects .carousel .fourthText {
   position: absolute;
-  top: 65px;
-  left: 188px;
   width: clamp(100px, 100%, 350px);
+  -webkit-transform: translate(295px, -490px);
+          transform: translate(295px, -490px);
   background-color: rgba(12, 173, 192, 0.2);
   padding: 30px;
   border-radius: 50%;
+  z-index: 2;
 }
 .projects .carousel .fourthText .links {
   display: -webkit-box;
@@ -682,7 +720,7 @@ main .about p {
 }
 .projects .carousel .fourthText a {
   text-align: center;
-  background-color: rgba(1, 1, 1, 0.2);
+  background-color: rgba(252, 252, 252, 0.5);
   padding: 10px 20px 10px 20px;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
@@ -699,12 +737,13 @@ main .about p {
 }
 .projects .carousel .fifthText {
   position: absolute;
-  top: 10px;
-  left: 85px;
   width: clamp(100px, 100%, 430px);
-  background-color: rgba(1, 1, 1, 0.2);
+  -webkit-transform: translate(232px, -695px);
+          transform: translate(232px, -695px);
+  background-color: rgba(2, 185, 175, 0.3);
   padding: 30px;
   border-radius: 50%;
+  z-index: 2;
 }
 .projects .carousel .fifthText .links {
   display: -webkit-box;
@@ -716,7 +755,7 @@ main .about p {
 }
 .projects .carousel .fifthText a {
   text-align: center;
-  background-color: rgba(1, 1, 1, 0.2);
+  background-color: rgba(252, 252, 252, 0.5);
   padding: 10px 20px 10px 20px;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
@@ -731,22 +770,9 @@ main .about p {
   -webkit-transition: 0.4s ease-in;
   transition: 0.4s ease-in;
 }
-.projects .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 40px;
-}
 .projects .skillUsed {
   word-spacing: 40px;
-  opacity: 0.3;
+  opacity: 0.5;
   margin: -8px 0 -8px 0;
 }
 .projects a:link,
@@ -756,11 +782,28 @@ main .about p {
   text-decoration: none;
 }
 
+@media (max-width: 1390px) {
+  .projects .carousel .secondText {
+    -webkit-transform: translate(740px, -980px);
+            transform: translate(740px, -980px);
+  }
+}
+@media (max-width: 1200px) {
+  .projects .carousel .secondText {
+    -webkit-transform: translate(630px, -980px);
+            transform: translate(630px, -980px);
+  }
+}
 @media (max-width: 1080px) {
   .projects .carousel .firstText {
     background-color: rgba(1, 1, 1, 0.8);
   }
-  .projects .carousel .secondText, .projects .carousel .thirdText {
+  .projects .carousel .secondText {
+    background-color: rgba(193, 204, 210, 0.8);
+    -webkit-transform: translate(500px, -980px);
+            transform: translate(500px, -980px);
+  }
+  .projects .carousel .thirdText {
     background-color: rgba(193, 204, 210, 0.8);
   }
   .projects .carousel .fourthText {
@@ -770,13 +813,62 @@ main .about p {
     background-color: rgba(1, 1, 1, 0.8);
   }
 }
+@media (max-width: 940px) {
+  .projects .carousel .secondText {
+    -webkit-transform: translate(360px, -1000px);
+            transform: translate(360px, -1000px);
+  }
+}
 @media (max-width: 800px) {
   .projects .carousel .firstText {
-    top: 430px;
+    -webkit-transform: translate(120px, -555px);
+            transform: translate(120px, -555px);
+  }
+  .projects .carousel .secondText {
+    -webkit-transform: translate(150px, -999px);
+            transform: translate(150px, -999px);
   }
   .projects .carousel .fourthText {
-    top: 500px;
-    left: 150px;
+    -webkit-transform: translate(90px, -555px);
+            transform: translate(90px, -555px);
+  }
+  .projects .carousel .fifthText {
+    -webkit-transform: translate(90px, -555px);
+            transform: translate(90px, -555px);
+  }
+}
+@media (max-width: 650px) {
+  .projects .carousel .thirdText {
+    -webkit-transform: translate(90px, -555px);
+            transform: translate(90px, -555px);
+  }
+}
+@media (max-width: 600px) {
+  .projects .carousel .firstText {
+    -webkit-transform: translate(90px, -555px);
+            transform: translate(90px, -555px);
+  }
+  .projects .carousel .secondText {
+    -webkit-transform: translate(90px, -999px);
+            transform: translate(90px, -999px);
+  }
+}
+@media (max-width: 530px) {
+  .projects .carousel .firstText {
+    -webkit-transform: translate(45px, -555px);
+            transform: translate(45px, -555px);
+  }
+  .projects .carousel .secondText {
+    -webkit-transform: translate(50px, -999px);
+            transform: translate(50px, -999px);
+  }
+  .projects .carousel .thirdText {
+    -webkit-transform: translate(55px, -515px);
+            transform: translate(55px, -515px);
+  }
+  .projects .carousel .fifthText {
+    -webkit-transform: translate(50px, -555px);
+            transform: translate(50px, -555px);
   }
 }
 .contact {
