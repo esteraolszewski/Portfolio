@@ -65,10 +65,9 @@
             width: clamp(100px, 100%, 430px);
             transform: translate(120px, -555px);
             background-color: rgba(253, 176, 0, 0.3);
-            padding: 35px;
+            padding: 45px;
             border-radius: 50%;
             z-index: 2;
-
 
             .links {
                 display: flex;
@@ -95,7 +94,7 @@
         .secondText {
             position: absolute;
             width: clamp(100px, 100%, 430px);
-            transform: translate(955px, -700px);
+            transform: translate(1100px, -890px);
             background-color: rgba(193, 204, 210, 0.5);
             padding: 50px;
             border-radius: 50%;
@@ -125,7 +124,7 @@
         .thirdText {
             position: absolute;
             width: clamp(100px, 100%, 430px);
-            transform: translate(160px, -566px);
+            transform: translate(285px, -500px);
             background-color: rgba(248, 115, 111, 0.5);
             padding: 50px;
             border-radius: 50%;
@@ -153,10 +152,10 @@
 
         .fourthText {
             position: absolute;
-            width: clamp(100px, 100%, 350px);
-            transform: translate(295px, -490px);
+            width: clamp(100px, 100%, 430px);
+            transform: translate(440px, -544px);
             background-color: rgba(12, 173, 192, 0.2);
-            padding: 30px;
+            padding: 75px;
             border-radius: 50%;
             z-index: 2;
 
@@ -210,13 +209,6 @@
         }
     }
 
-    // .wrapper {
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: center;
-    //     gap: 40px;
-    // }
-
     .skillUsed {
         word-spacing: 40px;
         opacity: 0.5;
@@ -234,11 +226,11 @@
 
 // Media Queries
 
-@media (max-width: 1390px) {
+@media (max-width: 1490px) {
     .projects {
         .carousel {
-            .secondText {
-                transform: translate(740px, -980px);
+            .firstText {
+                transform: translate(120px, -555px);
             }
 
 
@@ -247,11 +239,27 @@
      
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1390px) {
     .projects {
         .carousel {
             .secondText {
-                transform: translate(630px, -980px);
+                transform: translate(740px, -888px);
+            }
+
+
+        }
+    }
+     
+}
+
+@media (max-width: 1230px) {
+    .projects {
+        .carousel {
+            .firstText {
+                transform: translate(120px, -555px);
+            }
+            .secondText {
+                transform: translate(630px, -888px);
             }
 
 
@@ -270,7 +278,7 @@
 
             .secondText {
                 background-color: rgba(193, 204, 210, 0.8);
-                transform: translate(500px, -980px);
+                transform: translate(500px, -888px);
             }
 
             .thirdText {
@@ -293,7 +301,7 @@
     .projects {
         .carousel {
             .secondText {
-                transform: translate(360px, -1000px);
+                transform: translate(360px, -888px);
             }
 
 
@@ -310,7 +318,7 @@
             }
 
             .secondText {
-                transform: translate(150px, -999px);
+                transform: translate(150px, -888px);
             }
 
             .fourthText {
@@ -346,7 +354,7 @@
             }
 
             .secondText {
-                transform: translate(90px, -999px);
+                transform: translate(90px, -888px);
             }
 
 
@@ -364,7 +372,7 @@
             }
 
             .secondText {
-                transform: translate(50px, -999px);
+                transform: translate(50px, -888px);
                 width: 85%;
             }
 
@@ -374,7 +382,7 @@
             }
 
             .fourthText {
-                width: 66%;
+                width: 70%;
             }
 
             .fifthText {
@@ -385,26 +393,3 @@
     }
      
 }
-
-// @media (max-width: 480px) {
-//     .projects {
-//         .carousel {
-//             .firstText {
-//                 transform: translate(45px, -555px);
-//             }
-
-//             .secondText {
-//                 transform: translate(50px, -999px);
-//             }
-
-//             .thirdText {
-//                 transform: translate(55px, -515px);
-//             }
-
-//             .fifthText {
-//                 transform: translate(50px, -555px);
-//             }
-//         }
-//     }
-     
-// }

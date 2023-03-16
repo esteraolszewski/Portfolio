@@ -601,7 +601,7 @@ main .about p {
   -webkit-transform: translate(120px, -555px);
           transform: translate(120px, -555px);
   background-color: rgba(253, 176, 0, 0.3);
-  padding: 35px;
+  padding: 45px;
   border-radius: 50%;
   z-index: 2;
 }
@@ -633,8 +633,8 @@ main .about p {
 .projects .carousel .secondText {
   position: absolute;
   width: clamp(100px, 100%, 430px);
-  -webkit-transform: translate(955px, -700px);
-          transform: translate(955px, -700px);
+  -webkit-transform: translate(1100px, -890px);
+          transform: translate(1100px, -890px);
   background-color: rgba(193, 204, 210, 0.5);
   padding: 50px;
   border-radius: 50%;
@@ -668,8 +668,8 @@ main .about p {
 .projects .carousel .thirdText {
   position: absolute;
   width: clamp(100px, 100%, 430px);
-  -webkit-transform: translate(160px, -566px);
-          transform: translate(160px, -566px);
+  -webkit-transform: translate(285px, -500px);
+          transform: translate(285px, -500px);
   background-color: rgba(248, 115, 111, 0.5);
   padding: 50px;
   border-radius: 50%;
@@ -702,11 +702,11 @@ main .about p {
 }
 .projects .carousel .fourthText {
   position: absolute;
-  width: clamp(100px, 100%, 350px);
-  -webkit-transform: translate(295px, -490px);
-          transform: translate(295px, -490px);
+  width: clamp(100px, 100%, 430px);
+  -webkit-transform: translate(440px, -544px);
+          transform: translate(440px, -544px);
   background-color: rgba(12, 173, 192, 0.2);
-  padding: 30px;
+  padding: 75px;
   border-radius: 50%;
   z-index: 2;
 }
@@ -782,16 +782,26 @@ main .about p {
   text-decoration: none;
 }
 
-@media (max-width: 1390px) {
-  .projects .carousel .secondText {
-    -webkit-transform: translate(740px, -980px);
-            transform: translate(740px, -980px);
+@media (max-width: 1490px) {
+  .projects .carousel .firstText {
+    -webkit-transform: translate(120px, -555px);
+            transform: translate(120px, -555px);
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1390px) {
   .projects .carousel .secondText {
-    -webkit-transform: translate(630px, -980px);
-            transform: translate(630px, -980px);
+    -webkit-transform: translate(740px, -888px);
+            transform: translate(740px, -888px);
+  }
+}
+@media (max-width: 1230px) {
+  .projects .carousel .firstText {
+    -webkit-transform: translate(120px, -555px);
+            transform: translate(120px, -555px);
+  }
+  .projects .carousel .secondText {
+    -webkit-transform: translate(630px, -888px);
+            transform: translate(630px, -888px);
   }
 }
 @media (max-width: 1080px) {
@@ -800,8 +810,8 @@ main .about p {
   }
   .projects .carousel .secondText {
     background-color: rgba(193, 204, 210, 0.8);
-    -webkit-transform: translate(500px, -980px);
-            transform: translate(500px, -980px);
+    -webkit-transform: translate(500px, -888px);
+            transform: translate(500px, -888px);
   }
   .projects .carousel .thirdText {
     background-color: rgba(193, 204, 210, 0.8);
@@ -815,8 +825,8 @@ main .about p {
 }
 @media (max-width: 940px) {
   .projects .carousel .secondText {
-    -webkit-transform: translate(360px, -1000px);
-            transform: translate(360px, -1000px);
+    -webkit-transform: translate(360px, -888px);
+            transform: translate(360px, -888px);
   }
 }
 @media (max-width: 800px) {
@@ -825,8 +835,8 @@ main .about p {
             transform: translate(120px, -555px);
   }
   .projects .carousel .secondText {
-    -webkit-transform: translate(150px, -999px);
-            transform: translate(150px, -999px);
+    -webkit-transform: translate(150px, -888px);
+            transform: translate(150px, -888px);
   }
   .projects .carousel .fourthText {
     -webkit-transform: translate(90px, -555px);
@@ -849,8 +859,8 @@ main .about p {
             transform: translate(90px, -555px);
   }
   .projects .carousel .secondText {
-    -webkit-transform: translate(90px, -999px);
-            transform: translate(90px, -999px);
+    -webkit-transform: translate(90px, -888px);
+            transform: translate(90px, -888px);
   }
 }
 @media (max-width: 530px) {
@@ -860,8 +870,8 @@ main .about p {
     width: 85%;
   }
   .projects .carousel .secondText {
-    -webkit-transform: translate(50px, -999px);
-            transform: translate(50px, -999px);
+    -webkit-transform: translate(50px, -888px);
+            transform: translate(50px, -888px);
     width: 85%;
   }
   .projects .carousel .thirdText {
@@ -870,7 +880,7 @@ main .about p {
     width: 85%;
   }
   .projects .carousel .fourthText {
-    width: 66%;
+    width: 70%;
   }
   .projects .carousel .fifthText {
     -webkit-transform: translate(50px, -555px);
