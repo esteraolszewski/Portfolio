@@ -598,9 +598,9 @@ main .about p {
 .projects .carousel .firstText {
   position: absolute;
   width: clamp(100px, 100%, 430px);
-  -webkit-transform: translate(120px, -555px);
-          transform: translate(120px, -555px);
-  background-color: rgba(253, 176, 0, 0.3);
+  top: 140px;
+  left: 170px;
+  background-color: rgba(253, 176, 0, 0.8);
   padding: 45px;
   border-radius: 50%;
   z-index: 2;
@@ -633,9 +633,9 @@ main .about p {
 .projects .carousel .secondText {
   position: absolute;
   width: clamp(100px, 100%, 430px);
-  -webkit-transform: translate(1100px, -890px);
-          transform: translate(1100px, -890px);
-  background-color: rgba(193, 204, 210, 0.5);
+  top: 200px;
+  right: 130px;
+  background-color: rgba(193, 204, 210, 0.8);
   padding: 50px;
   border-radius: 50%;
   z-index: 2;
@@ -668,9 +668,9 @@ main .about p {
 .projects .carousel .thirdText {
   position: absolute;
   width: clamp(100px, 100%, 430px);
-  -webkit-transform: translate(285px, -500px);
-          transform: translate(285px, -500px);
-  background-color: rgba(248, 115, 111, 0.5);
+  top: 120px;
+  right: 200px;
+  background-color: rgba(248, 115, 111, 0.8);
   padding: 50px;
   border-radius: 50%;
   z-index: 2;
@@ -703,9 +703,9 @@ main .about p {
 .projects .carousel .fourthText {
   position: absolute;
   width: clamp(100px, 100%, 430px);
-  -webkit-transform: translate(440px, -544px);
-          transform: translate(440px, -544px);
-  background-color: rgba(0, 191, 88, 0.2);
+  top: 200px;
+  left: 200px;
+  background-color: rgba(0, 191, 88, 0.8);
   padding: 75px;
   border-radius: 50%;
   z-index: 2;
@@ -738,9 +738,9 @@ main .about p {
 .projects .carousel .fifthText {
   position: absolute;
   width: clamp(100px, 100%, 430px);
-  -webkit-transform: translate(232px, -695px);
-          transform: translate(232px, -695px);
-  background-color: rgba(2, 185, 175, 0.3);
+  top: 70px;
+  left: 200px;
+  background-color: rgba(2, 185, 175, 0.8);
   padding: 30px;
   border-radius: 50%;
   z-index: 2;
@@ -782,110 +782,98 @@ main .about p {
   text-decoration: none;
 }
 
-@media (max-width: 1490px) {
-  .projects .carousel .firstText {
-    -webkit-transform: translate(120px, -555px);
-            transform: translate(120px, -555px);
-  }
-}
-@media (max-width: 1390px) {
-  .projects .carousel .secondText {
-    -webkit-transform: translate(740px, -888px);
-            transform: translate(740px, -888px);
-  }
-}
-@media (max-width: 1230px) {
-  .projects .carousel .firstText {
-    -webkit-transform: translate(120px, -555px);
-            transform: translate(120px, -555px);
-  }
-  .projects .carousel .secondText {
-    -webkit-transform: translate(630px, -888px);
-            transform: translate(630px, -888px);
-  }
-}
 @media (max-width: 1080px) {
   .projects .carousel .firstText {
     background-color: rgba(1, 1, 1, 0.8);
+    border-radius: 0;
+    width: 70%;
+    top: 50%;
   }
   .projects .carousel .secondText {
-    background-color: rgba(193, 204, 210, 0.8);
-    -webkit-transform: translate(500px, -888px);
-            transform: translate(500px, -888px);
+    background-color: rgba(1, 1, 1, 0.8);
+    border-radius: 0;
+    width: 60%;
+    top: 50%;
   }
   .projects .carousel .thirdText {
-    background-color: rgba(193, 204, 210, 0.8);
+    background-color: rgba(1, 1, 1, 0.8);
+    border-radius: 0;
+    width: 50%;
+    top: 50%;
   }
   .projects .carousel .fourthText {
-    background-color: rgba(12, 173, 192, 0.8);
+    background-color: rgba(1, 1, 1, 0.8);
+    border-radius: 0;
+    width: 50%;
+    padding: 50px;
+    top: 50%;
   }
   .projects .carousel .fifthText {
     background-color: rgba(1, 1, 1, 0.8);
+    border-radius: 0;
+    width: 50%;
+    top: 50%;
   }
 }
-@media (max-width: 940px) {
-  .projects .carousel .secondText {
-    -webkit-transform: translate(360px, -888px);
-            transform: translate(360px, -888px);
-  }
-}
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .projects .carousel .firstText {
-    -webkit-transform: translate(120px, -555px);
-            transform: translate(120px, -555px);
+    top: 45%;
+    left: 15%;
   }
   .projects .carousel .secondText {
-    -webkit-transform: translate(150px, -888px);
-            transform: translate(150px, -888px);
-  }
-  .projects .carousel .fourthText {
-    -webkit-transform: translate(90px, -555px);
-            transform: translate(90px, -555px);
-  }
-  .projects .carousel .fifthText {
-    -webkit-transform: translate(90px, -555px);
-            transform: translate(90px, -555px);
-  }
-}
-@media (max-width: 650px) {
-  .projects .carousel .thirdText {
-    -webkit-transform: translate(90px, -555px);
-            transform: translate(90px, -555px);
-  }
-}
-@media (max-width: 600px) {
-  .projects .carousel .firstText {
-    -webkit-transform: translate(90px, -555px);
-            transform: translate(90px, -555px);
-  }
-  .projects .carousel .secondText {
-    -webkit-transform: translate(90px, -888px);
-            transform: translate(90px, -888px);
-  }
-}
-@media (max-width: 530px) {
-  .projects .carousel .firstText {
-    -webkit-transform: translate(45px, -555px);
-            transform: translate(45px, -555px);
-    width: 85%;
-  }
-  .projects .carousel .secondText {
-    -webkit-transform: translate(50px, -888px);
-            transform: translate(50px, -888px);
-    width: 85%;
+    top: 45%;
+    left: 15%;
   }
   .projects .carousel .thirdText {
-    -webkit-transform: translate(55px, -515px);
-            transform: translate(55px, -515px);
-    width: 85%;
+    top: 45%;
+    left: 15%;
   }
   .projects .carousel .fourthText {
-    width: 70%;
+    top: 45%;
+    left: 15%;
   }
   .projects .carousel .fifthText {
-    -webkit-transform: translate(50px, -555px);
-            transform: translate(50px, -555px);
-    width: 85%;
+    top: 45%;
+    left: 15%;
+  }
+}
+@media (max-width: 705px) {
+  .projects .carousel .firstText {
+    top: 50%;
+    padding: 10px;
+  }
+  .projects .carousel .secondText {
+    top: 50%;
+    padding: 10px;
+  }
+  .projects .carousel .thirdText {
+    top: 50%;
+    padding: 10px;
+  }
+  .projects .carousel .fourthText {
+    top: 50%;
+    padding: 10px;
+  }
+  .projects .carousel .fifthText {
+    top: 50%;
+    padding: 10px;
+  }
+}
+@media (max-width: 502px) {
+  .projects .carousel .firstText {
+    top: 40%;
+  }
+  .projects .carousel .secondText {
+    top: 40%;
+  }
+  .projects .carousel .thirdText {
+    top: 40%;
+  }
+  .projects .carousel .fourthText {
+    top: 40%;
+  }
+  .projects .carousel .fifthText {
+    top: 40%;
   }
 }
 .contact {
