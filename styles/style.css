@@ -705,7 +705,7 @@ main .about p {
   width: clamp(100px, 100%, 430px);
   -webkit-transform: translate(440px, -544px);
           transform: translate(440px, -544px);
-  background-color: rgba(12, 173, 192, 0.2);
+  background-color: rgba(0, 191, 88, 0.2);
   padding: 75px;
   border-radius: 50%;
   z-index: 2;
