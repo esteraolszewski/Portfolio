@@ -2,17 +2,18 @@
 
 // IMPORTED FONTS
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope&family=Montserrat+Alternates:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope&family=Montserrat+Alternates:wght@900&family=Libre+Bodoni:wght@700&display=swap');
 
 
 a {
-    font-family: variables.$buttonFont;
-    font-size: 20px;
+    font-family: variables.$font;
+    // font-family: variables.$buttonFont;
+    font-size: 15px;
     color: whitesmoke;
 }
 
 h1 {
-    font-family: variables.$headingFont;
+    font-family: variables.$buttonFont;
     font-size: clamp(2.5rem, 0.125rem + 7.9167vw, 8.4375rem);
     color: whitesmoke;
 }
@@ -20,7 +21,13 @@ h1 {
 h2 {
     font-family: variables.$headingFont;
     font-size: 60px;
-    color: #242B31;
+}
+
+.logo {
+    font-family: variables.$font;
+    color: whitesmoke;
+    font-size: 25px;
+    text-transform: uppercase;
 }
 
 .fontColour {
@@ -40,7 +47,7 @@ h3 {
 
 .head p {
     font-family: variables.$bodyFont;
-    font-size: 25px;
+    font-size: clamp(0.625rem, 0.293rem + 1.5625vw, 1.5625rem);
     color: whitesmoke;
 }
 

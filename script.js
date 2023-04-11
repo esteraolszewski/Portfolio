@@ -18,21 +18,21 @@ document.querySelectorAll(".navLink").forEach(n => n.addEventListener("click", (
     // Help from tutorial on Youtube by Adam Khoury
 
 
-let image = document.getElementById('image');
-let images = ['headerphoto1.png', 'headerphoto2.png', 'headerphoto3.png', 'headerphoto4.png'];
-let totalImages = images.length;
-let i = 0;
+// let image = document.getElementById('image');
+// let images = ['headerphoto1.png', 'headerphoto2.png', 'headerphoto3.png', 'headerphoto4.png'];
+// let totalImages = images.length;
+// let i = 0;
 
-function loop() {
-    if(i > (totalImages - 1)) {
-        i = 0;
-    }
-    image.innerHTML = '<img src="styles/Images/'+images[i]+'">';
-    i++;
-    loopTimer = setTimeout('loop()', 1000);
-}
+// function loop() {
+//     if(i > (totalImages - 1)) {
+//         i = 0;
+//     }
+//     image.innerHTML = '<img src="styles/Images/'+images[i]+'">';
+//     i++;
+//     loopTimer = setTimeout('loop()', 1000);
+// }
 
-loop();
+// loop();
 
 // Back to Top Button
 

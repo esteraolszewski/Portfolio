@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope&family=Montserrat+Alternates:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope&family=Montserrat+Alternates:wght@900&family=Libre+Bodoni:wght@700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -263,13 +263,13 @@ img {
 }
 
 a {
-  font-family: "Bebas Neue";
-  font-size: 20px;
+  font-family: "Libre Bodoni";
+  font-size: 15px;
   color: whitesmoke;
 }
 
 h1 {
-  font-family: "Montserrat Alternates";
+  font-family: "Bebas Neue";
   font-size: clamp(2.5rem, 0.125rem + 7.9167vw, 8.4375rem);
   color: whitesmoke;
 }
@@ -277,7 +277,13 @@ h1 {
 h2 {
   font-family: "Montserrat Alternates";
   font-size: 60px;
-  color: #242B31;
+}
+
+.logo {
+  font-family: "Libre Bodoni";
+  color: whitesmoke;
+  font-size: 25px;
+  text-transform: uppercase;
 }
 
 .fontColour {
@@ -297,7 +303,7 @@ h3 {
 
 .head p {
   font-family: "Manrope";
-  font-size: 25px;
+  font-size: clamp(0.625rem, 0.293rem + 1.5625vw, 1.5625rem);
   color: whitesmoke;
 }
 
@@ -321,7 +327,9 @@ li {
 }
 
 header {
-  background-color: #242B31;
+  background-image: url("././Images/backgroundHeader.jpg");
+  background-position: center;
+  background-size: cover;
   text-align: center;
   height: 100vh;
 }
@@ -350,9 +358,16 @@ header button:hover {
   opacity: 0.5;
 }
 header nav {
-  position: relative;
-  z-index: 2;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px white solid;
 }
 header nav ul {
   list-style: none;
@@ -362,7 +377,7 @@ header nav ul {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  gap: 150px;
+  gap: 50px;
 }
 header nav ul a:link,
 header nav ul a:visited,
@@ -384,20 +399,28 @@ header nav .hamburger .bar {
   background-color: whitesmoke;
 }
 header .head {
-  text-align: end;
-  margin-top: 200px;
-  position: relative;
-  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70vh;
 }
 header .head h1 {
   margin-bottom: -20px;
 }
-header .imageFlip img {
-  width: clamp(300px, 100%, 800px);
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transform: translate(-50px, -410px);
-          transform: translate(-50px, -410px);
+header .head p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 @media (max-width: 800px) {
@@ -431,12 +454,13 @@ header .imageFlip img {
     text-align: center;
     -webkit-transition: 0.6s;
     transition: 0.6s;
+    z-index: 2;
   }
   header nav .navMenu .navItem {
     margin: 16px 0;
   }
   header nav .navMenu .navItem a {
-    font-size: 40px;
+    font-size: 30px;
     padding-right: 35px;
   }
   header nav .navMenu.active {
@@ -446,11 +470,6 @@ header .imageFlip img {
 @media (max-width: 480px) {
   header h1 {
     font-size: 40px;
-  }
-  header .imageFlip img {
-    -webkit-transform: translate(5px, -250px);
-            transform: translate(5px, -250px);
-    width: 90%;
   }
 }
 main .about {

@@ -1,7 +1,10 @@
 @use './variables';
 
 header {
-    background-color: variables.$headerBackground;
+    // background-image: url("././Images/headerbackgroundoption.jpg");
+    background-image: url("././Images/backgroundHeader.jpg");
+    background-position: center;
+    background-size: cover;
     text-align: center;
     height: 100vh;
 
@@ -29,15 +32,16 @@ header {
     }
 
     nav {  
-        position: relative;
-        z-index: 2;
-        display: inline-block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px white solid;
 
         ul {
             list-style: none;
             display: flex;
             justify-content: space-evenly;
-            gap: 150px;
+            gap: 50px;
 
             a:link,
             a:visited,
@@ -66,28 +70,26 @@ header {
     }
 
     .head {
-        text-align: end;
-        margin-top: 200px;
-        position: relative;
-        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 70vh;
+        
 
         h1 {
             margin-bottom: -20px;
         }
 
+     
+        p {
+            display: flex;
+            justify-content: space-evenly;
         
-    }
-
-    .imageFlip {
-        
-        img {
-            width: clamp(300px, 100%, 800px);
-            object-fit: cover;
-            transform: translate(-50px, -410px);
         }
 
         
     }
+
 }
 
 // Media Queries
@@ -125,13 +127,13 @@ header {
         height: 100%;
         text-align: center;
         transition: 0.6s;
-        
+        z-index: 2;
 
             .navItem {
                 margin: 16px 0;
 
                 a {
-                    font-size: 40px;
+                    font-size: 30px;
                     padding-right: 35px;
                 }
             }
@@ -154,12 +156,12 @@ header {
             font-size: 40px;
         }
 
-        .imageFlip {
-        img {
-            transform: translate(5px, -250px); 
-            width: 90%;
-        }
-    }
+    //     .imageFlip {
+    //     img {
+    //         transform: translate(5px, -250px); 
+    //         width: 90%;
+    //     }
+    // }
     }
 }
 
