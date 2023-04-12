@@ -236,28 +236,28 @@
     .projects {
         .carousel {
             .firstText {
-                background-color: rgba(1, 1, 1, 0.8);
+                background-color: rgba(1, 1, 1, 0.5);
                 border-radius: 0;
                 width: 70%;
                 top: 50%;          
             }
 
             .secondText {
-                background-color: rgba(1, 1, 1, 0.8);
+                background-color: rgba(1, 1, 1, 0.5);
                 border-radius: 0;
                 width: 60%;
                 top: 50%;          
             }
 
             .thirdText {
-                background-color: rgba(1, 1, 1, 0.8);
+                background-color: rgba(1, 1, 1, 0.5);
                 border-radius: 0;
                 width: 50%;
                 top: 50%;          
             }
 
             .fourthText {
-                background-color: rgba(1, 1, 1, 0.8);
+                background-color: rgba(1, 1, 1, 0.5);
                 border-radius: 0;
                 width: 50%;
                 padding: 50px;
@@ -265,7 +265,7 @@
             }
 
             .fifthText {
-                background-color: rgba(1, 1, 1, 0.8);
+                background-color: rgba(1, 1, 1, 0.5);
                 border-radius: 0;
                 width: 50%;
                 top: 50%;           
@@ -279,27 +279,30 @@
         .carousel {
             .firstText {
                 top: 45%;          
-                left: 15%;
+                left: 16%;
             }
 
             .secondText {
                 top: 45%;          
-                left: 15%;          
+                left: 20%;          
             }
 
             .thirdText {
                 top: 45%;          
-                left: 15%;         
+                left: 16%;  
+                width: 70%;       
             }
 
             .fourthText {
                 top: 45%;          
-                left: 15%;           
+                left: 15%;  
+                width: 70%;       
             }
 
             .fifthText {
                 top: 45%;          
-                left: 15%;          
+                left: 16%;
+                width: 70%;       
             }
 
         }
@@ -337,6 +340,19 @@
         }
     }
      
+}
+
+@media (max-width: 630px) {
+    .projects {
+        .carousel {
+            .carouselButton {
+                width: 50px;
+                height: 50px;
+                font-size: 2rem;
+
+            }
+        }
+    }
 }
 
 

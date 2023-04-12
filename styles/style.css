@@ -803,32 +803,32 @@ main .about p {
 
 @media (max-width: 1080px) {
   .projects .carousel .firstText {
-    background-color: rgba(1, 1, 1, 0.8);
+    background-color: rgba(1, 1, 1, 0.5);
     border-radius: 0;
     width: 70%;
     top: 50%;
   }
   .projects .carousel .secondText {
-    background-color: rgba(1, 1, 1, 0.8);
+    background-color: rgba(1, 1, 1, 0.5);
     border-radius: 0;
     width: 60%;
     top: 50%;
   }
   .projects .carousel .thirdText {
-    background-color: rgba(1, 1, 1, 0.8);
+    background-color: rgba(1, 1, 1, 0.5);
     border-radius: 0;
     width: 50%;
     top: 50%;
   }
   .projects .carousel .fourthText {
-    background-color: rgba(1, 1, 1, 0.8);
+    background-color: rgba(1, 1, 1, 0.5);
     border-radius: 0;
     width: 50%;
     padding: 50px;
     top: 50%;
   }
   .projects .carousel .fifthText {
-    background-color: rgba(1, 1, 1, 0.8);
+    background-color: rgba(1, 1, 1, 0.5);
     border-radius: 0;
     width: 50%;
     top: 50%;
@@ -837,23 +837,26 @@ main .about p {
 @media (max-width: 900px) {
   .projects .carousel .firstText {
     top: 45%;
-    left: 15%;
+    left: 16%;
   }
   .projects .carousel .secondText {
     top: 45%;
-    left: 15%;
+    left: 20%;
   }
   .projects .carousel .thirdText {
     top: 45%;
-    left: 15%;
+    left: 16%;
+    width: 70%;
   }
   .projects .carousel .fourthText {
     top: 45%;
     left: 15%;
+    width: 70%;
   }
   .projects .carousel .fifthText {
     top: 45%;
-    left: 15%;
+    left: 16%;
+    width: 70%;
   }
 }
 @media (max-width: 705px) {
@@ -876,6 +879,13 @@ main .about p {
   .projects .carousel .fifthText {
     top: 50%;
     padding: 10px;
+  }
+}
+@media (max-width: 630px) {
+  .projects .carousel .carouselButton {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
   }
 }
 @media (max-width: 502px) {
