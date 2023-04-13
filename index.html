@@ -24,45 +24,74 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         <!-- Skip Link -->
         <a href="#about" class="skipLink">Skip to Main Content</a>
 
+        <!-- NAVIGATION BAR -->
+        <nav class="navBar">
+            <h2 class="logo">Estera Olszewski</h2>
+            <ul class="navMenu">
+                <li class="navItem"><a href="#" class="navLink">Home</a></li>
+                <li class="navItem"><a href="#about" class="navLink">About</a></li>
+                <li class="navItem"><a href="#projects" class="navLink">Projects</a></li>
+                <li class="navItem"><a href="#contact" class="navLink">Contact</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <!-- END OF NAV BAR -->
+
         <!-- HEADER -->
         <header>
-            <div class="wrapper">
-
-            <!-- Back to Top Button -->
-            <button onclick="topFunction()" id="topButton" title="Go to top">TOP</button>
-            <!-- NAVIGATION BAR -->
-                <nav class="navBar">
-                    <h2 class="logo">Estera Olszewski</h2>
-                    <ul class="navMenu">
-                        <li class="navItem" data-aos="flip-up" data-aos-delay="200"><a href="#" class="navLink">Home</a></li>
-                        <li class="navItem" data-aos="flip-up" data-aos-delay="300"><a href="#about" class="navLink">About</a></li>
-                        <li class="navItem" data-aos="flip-up" data-aos-delay="400"><a href="#projects" class="navLink">Projects</a></li>
-                        <li class="navItem" data-aos="flip-up" data-aos-delay="500"><a href="#contact" class="navLink">Contact</a></li>
-                    </ul>
-
-                    <div class="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </nav>
-                <!-- END OF NAV BAR -->
-                <div class="head">
-                    <h1 data-aos="flip-up" data-aos-delay="400">Web Developer</h1>
-
-                        <p data-aos="flip-down" data-aos-delay="600">
-                            <span>React</span>
-                            <span>JavaScript</span>
-                            <span>Sass</span>
-                            <span>CSS</span>
-                            <span>HTML</span>
-                            <span>Git</span> 
-                        </p>
-                   
-                </div>
-            </div> 
-                
+            <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
             </div>
+                
+                <div class="slideRow" id="slide">
+                    <div class="slideColumn webDev">                    
+
+                        <!-- Back to Top Button -->
+                        <button onclick="topFunction()" id="topButton" title="Go to top">TOP</button>
+                        
+                            <div class="head">
+                                
+                                <h1 data-aos="flip-up" data-aos-delay="400">Web Developer</h1>
+                                    <p data-aos="flip-down" data-aos-delay="600">
+                                        <span>React</span>
+                                        <span>JavaScript</span>
+                                        <span>Sass</span>
+                                        <span>CSS</span>
+                                        <span>HTML</span>
+                                        <span>Git</span> 
+                                    </p>        
+                            </div>
+                        </div> 
+                    </div>
+
+                
+                <div class="slideColumn photographer">                   
+                        <!-- Back to Top Button -->
+                        <button onclick="topFunction()" id="topButton" title="Go to top">TOP</button>
+                        
+                            <div class="head">
+                                
+                                <h1>Photographer</h1>
+                                    <p>
+                                        <span>Editorial</span>
+                                        <span>Portrait</span>
+                                        <span>Fashion</span>
+                                        <span>Commercial</span>
+                                        <span>Photoshop</span>
+                                        <span>Lightroom</span> 
+                                    </p>     
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                
+                
         </header>
 
         <!-- MAIN -->
@@ -81,7 +110,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
             </section>
 
             <!-- 2ND SECTION -->
-            <section class="skills">
+            <!-- <section class="skills">
                 <div class="wrapper">
                     <h2 data-aos="flip-up" data-aos-delay="100" class="fontColour">Skills</h2>
                     
@@ -111,7 +140,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                         </ul>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!-- 3RD SECTION -->
             <section class="projects" id="projects">
@@ -254,5 +283,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         <script>
           AOS.init();
         </script>
+        
+
 </body>
 </html>

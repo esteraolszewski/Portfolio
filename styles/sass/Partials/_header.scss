@@ -1,12 +1,106 @@
 @use './variables';
 
+nav {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px white solid;
+    position: absolute;
+    z-index: 3;
+    width: 100vw;
+    padding: 0 40px;
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 50px;
+
+        a:link,
+        a:visited,
+        a:hover,
+        a:active { 
+         text-decoration: none; 
+        }
+    }
+
+    .hamburger {
+
+    display: none;
+    cursor: pointer;
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: whitesmoke;
+        }
+    }
+
+}
+
 header {
-    // background-image: url("././Images/headerbackgroundoption.jpg");
-    background-image: url("././Images/backgroundHeader.jpg");
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    height: 100vh;
+    
+
+    .indicator {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        z-index: 2;
+
+        .btn {
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            margin: 4px;
+            border-radius: 15px;
+            background: white;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .active {
+            height: 20px;
+            width: 20px;
+        }
+    }
+    
+
+    .slideRow {
+        // display: flex;
+        // width: 100%;
+        transition: 1s;
+
+        .slideColumn {
+            width: 100%;
+            position: relative;
+        }
+    }
+
+    .webDev {
+        background-image: url("././Images/backgroundHeader.jpg");
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        height: 100vh;
+    }
+
+    .photographer {
+        background-image: url("././Images/headerbackgroundoption.jpg");
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+    
 
     button {
         display: none;
@@ -31,72 +125,27 @@ header {
         opacity: 0.5;
     }
 
-    nav {  
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px white solid;
-
-        ul {
-            list-style: none;
-            display: flex;
-            justify-content: space-evenly;
-            gap: 50px;
-
-            a:link,
-            a:visited,
-            a:hover,
-            a:active { 
-             text-decoration: none; 
-            }
-        }
-
-        .hamburger {
-
-        display: none;
-        cursor: pointer;
-
-            .bar {
-                display: block;
-                width: 25px;
-                height: 3px;
-                margin: 5px auto;
-                -webkit-transition: all 0.3s ease-in-out;
-                transition: all 0.3s ease-in-out;
-                background-color: whitesmoke;
-            }
-        }
-    
-    }
-
     .head {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 70vh;
-        
+        height: 90%;
 
         h1 {
             margin-bottom: -20px;
         }
-
      
         p {
             display: flex;
             justify-content: space-evenly;
-        
-        }
-
-        
+        }  
     }
-
 }
+
 
 // Media Queries
 
 @media (max-width:800px) {
-
-header {
 
     nav {
     .hamburger {
@@ -127,7 +176,7 @@ header {
         height: 100%;
         text-align: center;
         transition: 0.6s;
-        z-index: 2;
+        z-index: 4;
 
             .navItem {
                 margin: 16px 0;
@@ -147,7 +196,7 @@ header {
     }
 }
 }
-}
+
 
 
 @media (max-width: 480px) {
@@ -156,12 +205,6 @@ header {
             font-size: 40px;
         }
 
-    //     .imageFlip {
-    //     img {
-    //         transform: translate(5px, -250px); 
-    //         width: 90%;
-    //     }
-    // }
     }
 }
 
