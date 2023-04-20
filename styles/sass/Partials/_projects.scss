@@ -12,10 +12,10 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 50px;
+        padding-right: 40px;
 
     .proBox {
         width: clamp(250px, 100%, 700px);
-        // height: clamp(250px, 100%, 700px);
         position: relative;
         list-style-type: none;
 

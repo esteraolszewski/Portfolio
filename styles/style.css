@@ -628,6 +628,7 @@ main .about p {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 50px;
+  padding-right: 40px;
 }
 .projects ul .proBox {
   width: clamp(250px, 100%, 700px);
