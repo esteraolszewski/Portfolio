@@ -3,7 +3,6 @@
 .projects {
 
     background-color: variables.$bodyBackgroundOne;
-    text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
 
@@ -15,8 +14,6 @@
         gap: 50px;
 
     .proBox {
-        // width: 700px;
-        // height: 700px;
         width: clamp(250px, 100%, 700px);
         // height: clamp(250px, 100%, 700px);
         position: relative;
@@ -38,22 +35,20 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: rgba(0, 0, 0, 0.8);
-            padding: 40px;
+            padding: 60px 10px;
             z-index: 2;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             opacity: 0;
             transition: all 0.2s ease-out;
 
 
             .links {
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-between;
             }
         
             a {
-                text-align: center;
                 background-color: rgba(252, 252, 252, 0.5);
                 padding: 10px 20px 10px 20px;
                 transition: 0.4s ease-out;
@@ -78,21 +73,19 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: rgba(0, 0, 0, 0.8);
-            padding: 50px;
+            padding: 60px 10px;
             z-index: 2;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             opacity: 0;
             transition: all 0.2s ease-out;
 
             .links {
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-between;
             }
         
             a {
-                text-align: center;
                 background-color: rgba(252, 252, 252, 0.5);
                 padding: 10px 20px 10px 20px;
                 transition: 0.4s ease-out;
@@ -117,21 +110,19 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: rgba(0, 0, 0, 0.8);
-            padding: 50px;
+            padding: 60px 10px;
             z-index: 2;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             opacity: 0;
             transition: all 0.2s ease-out;
 
             .links {
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-between;
             }
         
             a {
-                text-align: center;
                 background-color: rgba(252, 252, 252, 0.5);
                 padding: 10px 20px 10px 20px;
                 transition: 0.4s ease-out;
@@ -156,21 +147,19 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: rgba(0, 0, 0, 0.8);
-            padding: 75px;
+            padding: 60px 10px;
             z-index: 2;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             opacity: 0;
             transition: all 0.2s ease-out;
 
             .links {
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-between;
             }
         
             a {
-                text-align: center;
                 background-color: rgba(252, 252, 252, 0.5);
                 padding: 10px 20px 10px 20px;
                 transition: 0.4s ease-out;
@@ -195,21 +184,19 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: rgba(0, 0, 0, 0.8);
-            padding: 30px;
+            padding: 60px 10px;
             z-index: 2;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             opacity: 0;
             transition: all 0.2s ease-out;
 
             .links {
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-between;
             }
         
             a {
-                text-align: center;
                 background-color: rgba(252, 252, 252, 0.5);
                 padding: 10px 20px 10px 20px;
                 transition: 0.4s ease-out;
@@ -245,160 +232,31 @@
 
 // Media Queries
 
-@media (max-width: 1080px) {
 
+@media (max-width: 500px) {
     .projects {
-        .carousel {
-            .firstText {
-                background-color: rgba(1, 1, 1, 0.5);
-                border-radius: 0;
-                width: 70%;
-                top: 50%;          
-            }
+        ul {
+            .proBox {
+               height: 400px;
 
-            .secondText {
-                background-color: rgba(1, 1, 1, 0.5);
-                border-radius: 0;
-                width: 60%;
-                top: 50%;          
-            }
-
-            .thirdText {
-                background-color: rgba(1, 1, 1, 0.5);
-                border-radius: 0;
-                width: 50%;
-                top: 50%;          
-            }
-
-            .fourthText {
-                background-color: rgba(1, 1, 1, 0.5);
-                border-radius: 0;
-                width: 50%;
-                padding: 50px;
-                top: 50%;           
-            }
-
-            .fifthText {
-                background-color: rgba(1, 1, 1, 0.5);
-                border-radius: 0;
-                width: 50%;
-                top: 50%;           
             }
         }
-    }
-}
-
-@media (max-width: 900px) {
-    .projects {
-        .carousel {
-            .firstText {
-                top: 45%;          
-                left: 16%;
-            }
-
-            .secondText {
-                top: 45%;          
-                left: 20%;          
-            }
-
-            .thirdText {
-                top: 45%;          
-                left: 16%;  
-                width: 70%;       
-            }
-
-            .fourthText {
-                top: 45%;          
-                left: 15%;  
-                width: 70%;       
-            }
-
-            .fifthText {
-                top: 45%;          
-                left: 16%;
-                width: 70%;       
-            }
-
-        }
-    }
      
+    }
 }
 
-@media (max-width: 705px) {
+@media (max-width: 350px) {
     .projects {
-        .carousel {
-            .firstText {
-                top: 50%;
-                padding: 10px;
-            }
+        ul {
+            .proBox {
+               height: 500px;
 
-            .secondText {
-                top: 50%;
-                padding: 10px;         
-            }
+               .firstText, .secondText, .thirdText, .fourthText, .fifthText {
+                padding: 100px 10px;
+               }
 
-            .thirdText {
-                top: 50%;
-                padding: 10px;        
-            }
-
-            .fourthText {
-                top: 50%;
-                padding: 10px;           
-            }
-
-            .fifthText {
-                top: 50%;
-                padding: 10px;         
             }
         }
-    }
      
-}
-
-@media (max-width: 630px) {
-    .projects {
-        .carousel {
-            .carouselButton {
-                width: 50px;
-                height: 50px;
-                font-size: 2rem;
-
-            }
-        }
     }
-}
-
-
-@media (max-width: 502px) {
-    .projects {
-        .carousel {
-            .firstText {
-                top: 40%;
-            }
-
-            .secondText {
-                top: 40%;
-       
-            }
-
-            .thirdText {
-                top: 40%;
-       
-            }
-
-            .fourthText {
-                top: 40%;
-          
-            }
-
-            .fifthText {
-                top: 40%;
-         
-            }
-
-
-        }
-    }
-     
 }
