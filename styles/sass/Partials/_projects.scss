@@ -2,53 +2,25 @@
 
 .projects {
 
-    background-color: variables.$headerBackground;
+    background-color: variables.$bodyBackgroundOne;
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
 
-    .carousel {
+    ul {
         width: 100vw;
-        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+
+    .proBox {
+        width: 700px;
+        height: 700px;
         position: relative;
+        list-style-type: none;
 
-        .carouselButton {
-            position: absolute;
-            z-index: 2;
-            background: none;
-            border: none;
-            font-size: 4rem;
-            top: 50%;
-            transform: translateY(-50%);
-            color: rgba(255, 255, 255, .5);
-            cursor: pointer;
-            border-radius: 50%;
-            padding: 0 .5rem;
-            background-color: rgba(0, 0, 0, .1);
-        }
-
-        .carouselButton:hover,
-        .carouselButton:focus {
-            color: white;
-            background-color: rgba(0, 0, 0, .2);
-
-        } 
-
-        .carouselButton.prev {
-            left: 1rem;
-        }
-
-        .carouselButton.next {
-            right: 1rem;
-        }
-
-        .slide {
-            position: absolute;
-            inset: 0;
-            opacity: 0;
-        }
-
-        .slide > img {
+        img {
             display: block;
             width: 100%;
             height: 100%;
@@ -56,19 +28,23 @@
             object-position: center;
         }
 
-        .slide[data-active] {
-            opacity: 1;
-        }
-
         .firstText {
             position: absolute;
-            width: clamp(100px, 100%, 430px);
-            top: 140px;
-            left: 170px;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             background-color: rgba(253, 176, 0, 0.8);
-            padding: 45px;
+            padding: 40px;
             border-radius: 50%;
             z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.2s ease-out;
+
 
             .links {
                 display: flex;
@@ -80,8 +56,6 @@
                 background-color: rgba(252, 252, 252, 0.5);
                 padding: 10px 20px 10px 20px;
                 transition: 0.4s ease-out;
-                z-index: 2;
-                display: flex;
             }
         
             a:hover {
@@ -89,19 +63,28 @@
                 transition: 0.4s ease-in;
             }
 
-            
+           &:hover {
+            opacity: 1;
+            transition: all 0.2s ease-in;
+           } 
         }
 
         .secondText {
             position: absolute;
-            width: clamp(100px, 100%, 430px);
-            top: 200px;
-            right: 130px;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             background-color: rgba(193, 204, 210, 0.8);
             padding: 50px;
             border-radius: 50%;
             z-index: 2;
-
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.2s ease-out;
 
             .links {
                 display: flex;
@@ -113,25 +96,35 @@
                 background-color: rgba(252, 252, 252, 0.5);
                 padding: 10px 20px 10px 20px;
                 transition: 0.4s ease-out;
-                z-index: 2;
-                display: flex;
             }
         
             a:hover {
                 transform: scale(1.1);
                 transition: 0.4s ease-in;
             }
+
+            &:hover {
+                opacity: 1;
+                transition: all 0.2s ease-in;
+               } 
         }
 
         .thirdText {
             position: absolute;
-            width: clamp(100px, 100%, 430px);
-            top: 120px;
-            right: 200px;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             background-color: rgba(248, 115, 111, 0.8);
             padding: 50px;
             border-radius: 50%;
             z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.2s ease-out;
 
             .links {
                 display: flex;
@@ -143,25 +136,35 @@
                 background-color: rgba(252, 252, 252, 0.5);
                 padding: 10px 20px 10px 20px;
                 transition: 0.4s ease-out;
-                z-index: 2;
-                display: flex;
             }
         
             a:hover {
                 transform: scale(1.1);
                 transition: 0.4s ease-in;
             }
+
+            &:hover {
+                opacity: 1;
+                transition: all 0.2s ease-in;
+               } 
         }
 
         .fourthText {
             position: absolute;
-            width: clamp(100px, 100%, 430px);
-            top: 200px;
-            left: 200px;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             background-color: rgba(0, 191, 88, 0.8);
             padding: 75px;
             border-radius: 50%;
             z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.2s ease-out;
 
             .links {
                 display: flex;
@@ -173,25 +176,35 @@
                 background-color: rgba(252, 252, 252, 0.5);
                 padding: 10px 20px 10px 20px;
                 transition: 0.4s ease-out;
-                z-index: 2;
-                display: flex;
             }
         
             a:hover {
                 transform: scale(1.1);
                 transition: 0.4s ease-in;
             }
+
+            &:hover {
+                opacity: 1;
+                transition: all 0.2s ease-in;
+               } 
         }
 
         .fifthText {
             position: absolute;
-            width: clamp(100px, 100%, 430px);
-            top: 70px;
-            left: 200px;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             background-color: rgba(2, 185, 175, 0.8);
             padding: 30px;
             border-radius: 50%;
             z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.2s ease-out;
 
             .links {
                 display: flex;
@@ -203,16 +216,21 @@
                 background-color: rgba(252, 252, 252, 0.5);
                 padding: 10px 20px 10px 20px;
                 transition: 0.4s ease-out;
-                z-index: 2;
-                display: flex;
             }
         
             a:hover {
                 transform: scale(1.1);
                 transition: 0.4s ease-in;
             }
+
+            &:hover {
+                opacity: 1;
+                transition: all 0.2s ease-in;
+               } 
         }
     }
+    }
+}
 
     .skillUsed {
         word-spacing: 40px;
@@ -227,7 +245,6 @@
     a:active { 
         text-decoration: none; 
     }
-}
 
 // Media Queries
 

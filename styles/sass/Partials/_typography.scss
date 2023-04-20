@@ -30,19 +30,27 @@ h2 {
     text-transform: uppercase;
 }
 
-.fontColour {
-    color: whitesmoke;
+.fontColour, .icons, .contactP, .footerP {
+    color: black;
 }
 
-.skills, .contact, footer {
-    color: whitesmoke;
-}
+// .skills, .contact, footer {
+//     color: black;
+// }
 
 h3 {
     font-family: variables.$bodyFont;
-    font-size: 30px;
+    font-size: 50px;
     text-transform: uppercase;
     color: whitesmoke;
+}
+
+.skillUsed {
+    font-size: 30px;
+}
+
+.info {
+    font-size: 20px;
 }
 
 .head p {
@@ -69,4 +77,5 @@ li {
 
 .projects a {
     color: black;
+    font-size: 20px;
 }
