@@ -292,17 +292,17 @@ h2 {
 
 h3 {
   font-family: "Manrope";
-  font-size: 50px;
+  font-size: clamp(1.25rem, 0.7743rem + 2.2388vw, 3.125rem);
   text-transform: uppercase;
   color: whitesmoke;
 }
 
 .skillUsed {
-  font-size: 30px;
+  font-size: clamp(0.625rem, 0.3078rem + 1.4925vw, 1.875rem);
 }
 
 .info {
-  font-size: 20px;
+  font-size: clamp(0.625rem, 0.4664rem + 0.7463vw, 1.25rem);
 }
 
 .head p {
@@ -328,7 +328,7 @@ li {
 
 .projects a {
   color: black;
-  font-size: 20px;
+  font-size: clamp(0.625rem, 0.4664rem + 0.7463vw, 1.25rem);
 }
 
 nav {
@@ -631,8 +631,7 @@ main .about p {
   gap: 50px;
 }
 .projects ul .proBox {
-  width: 700px;
-  height: 700px;
+  width: clamp(250px, 100%, 700px);
   position: relative;
   list-style-type: none;
 }
@@ -653,9 +652,8 @@ main .about p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: rgba(253, 176, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 40px;
-  border-radius: 50%;
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -705,9 +703,8 @@ main .about p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: rgba(193, 204, 210, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 50px;
-  border-radius: 50%;
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -757,9 +754,8 @@ main .about p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: rgba(248, 115, 111, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 50px;
-  border-radius: 50%;
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -809,9 +805,8 @@ main .about p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: rgba(0, 191, 88, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 75px;
-  border-radius: 50%;
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -861,9 +856,8 @@ main .about p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: rgba(2, 185, 175, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 30px;
-  border-radius: 50%;
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;

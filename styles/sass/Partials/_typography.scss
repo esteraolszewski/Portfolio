@@ -34,23 +34,19 @@ h2 {
     color: black;
 }
 
-// .skills, .contact, footer {
-//     color: black;
-// }
-
 h3 {
     font-family: variables.$bodyFont;
-    font-size: 50px;
+    font-size: clamp(1.25rem, 0.7743rem + 2.2388vw, 3.125rem);
     text-transform: uppercase;
     color: whitesmoke;
 }
 
 .skillUsed {
-    font-size: 30px;
+    font-size: clamp(0.625rem, 0.3078rem + 1.4925vw, 1.875rem);
 }
 
 .info {
-    font-size: 20px;
+    font-size: clamp(0.625rem, 0.4664rem + 0.7463vw, 1.25rem);
 }
 
 .head p {
@@ -77,5 +73,5 @@ li {
 
 .projects a {
     color: black;
-    font-size: 20px;
+    font-size: clamp(0.625rem, 0.4664rem + 0.7463vw, 1.25rem);
 }
